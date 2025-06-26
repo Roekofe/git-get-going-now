@@ -18,6 +18,7 @@ interface Visit {
   dispensaries: {
     survey_display_name: string;
     hoodie_id: string;
+    olcc_business_name: string;
   };
 }
 
@@ -42,7 +43,8 @@ export default function VisitHistory({ userEmail, refreshTrigger }: VisitHistory
           *,
           dispensaries (
             survey_display_name,
-            hoodie_id
+            hoodie_id,
+            olcc_business_name
           )
         `)
         .eq('rep_email', userEmail)
@@ -125,10 +127,16 @@ export default function VisitHistory({ userEmail, refreshTrigger }: VisitHistory
                         {format(new Date(visit.visit_timestamp), 'MMM d, yyyy h:mm a')}
                       </span>
                       <span className="capitalize">
-                        {visit.visit_purpose.replace('_', ' ')}
+                        {visit.visit_purpose?.replace('_', ' ')}
                       </span>
                     </div>
                   </div>
+
+                  {visit.dispensaries?.olcc_business_name && (
+                    <div className="text-xs text-gray-500 mb-1">
+                      OLCC: {visit.dispensaries.olcc_business_name}
+                    </div>
+                  )}
 
                   {visit.samples_given && (
                     <div className="flex items-center gap-1 text-sm text-gray-600 mb-1">

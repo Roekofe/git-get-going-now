@@ -14,30 +14,39 @@ export type Database = {
           confidence_score: string | null
           created_at: string
           hoodie_id: string | null
+          hoodie_license: string | null
           id: string
           is_verified: string | null
           match_type: string | null
+          olcc_business_name: string | null
           survey_display_name: string | null
+          verification_notes: string | null
           verified_license: string | null
         }
         Insert: {
           confidence_score?: string | null
           created_at?: string
           hoodie_id?: string | null
+          hoodie_license?: string | null
           id?: string
           is_verified?: string | null
           match_type?: string | null
+          olcc_business_name?: string | null
           survey_display_name?: string | null
+          verification_notes?: string | null
           verified_license?: string | null
         }
         Update: {
           confidence_score?: string | null
           created_at?: string
           hoodie_id?: string | null
+          hoodie_license?: string | null
           id?: string
           is_verified?: string | null
           match_type?: string | null
+          olcc_business_name?: string | null
           survey_display_name?: string | null
+          verification_notes?: string | null
           verified_license?: string | null
         }
         Relationships: []

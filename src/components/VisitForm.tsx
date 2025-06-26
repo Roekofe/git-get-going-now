@@ -15,7 +15,12 @@ interface Dispensary {
   id: string;
   survey_display_name: string;
   hoodie_id: string;
+  hoodie_license: string;
   verified_license: string;
+  olcc_business_name: string;
+  match_type: string;
+  verification_notes: string;
+  confidence_score: string;
   is_verified: string;
 }
 
