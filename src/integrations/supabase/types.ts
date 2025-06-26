@@ -9,7 +9,116 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      dispensaries: {
+        Row: {
+          confidence_score: string | null
+          created_at: string
+          hoodie_id: string | null
+          id: string
+          is_verified: string | null
+          match_type: string | null
+          survey_display_name: string | null
+          verified_license: string | null
+        }
+        Insert: {
+          confidence_score?: string | null
+          created_at?: string
+          hoodie_id?: string | null
+          id?: string
+          is_verified?: string | null
+          match_type?: string | null
+          survey_display_name?: string | null
+          verified_license?: string | null
+        }
+        Update: {
+          confidence_score?: string | null
+          created_at?: string
+          hoodie_id?: string | null
+          id?: string
+          is_verified?: string | null
+          match_type?: string | null
+          survey_display_name?: string | null
+          verified_license?: string | null
+        }
+        Relationships: []
+      }
+      users: {
+        Row: {
+          active: boolean | null
+          created_at: string
+          email: string
+          id: string
+          name: string | null
+          role: string | null
+          territory: string | null
+        }
+        Insert: {
+          active?: boolean | null
+          created_at?: string
+          email: string
+          id?: string
+          name?: string | null
+          role?: string | null
+          territory?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string | null
+          role?: string | null
+          territory?: string | null
+        }
+        Relationships: []
+      }
+      visits: {
+        Row: {
+          analysis_status: string | null
+          created_at: string
+          dispensary_id: string
+          estimated_cost: number | null
+          id: string
+          notes: string | null
+          rep_email: string
+          samples_given: string | null
+          visit_purpose: string | null
+          visit_timestamp: string
+        }
+        Insert: {
+          analysis_status?: string | null
+          created_at?: string
+          dispensary_id: string
+          estimated_cost?: number | null
+          id?: string
+          notes?: string | null
+          rep_email: string
+          samples_given?: string | null
+          visit_purpose?: string | null
+          visit_timestamp: string
+        }
+        Update: {
+          analysis_status?: string | null
+          created_at?: string
+          dispensary_id?: string
+          estimated_cost?: number | null
+          id?: string
+          notes?: string | null
+          rep_email?: string
+          samples_given?: string | null
+          visit_purpose?: string | null
+          visit_timestamp?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "visits_dispensary_id_fkey"
+            columns: ["dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "dispensaries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
