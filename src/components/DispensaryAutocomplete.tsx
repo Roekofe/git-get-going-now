@@ -8,15 +8,15 @@ import { Search } from 'lucide-react';
 
 interface Dispensary {
   id: string;
-  survey_display_name: string;
-  hoodie_id: string;
-  hoodie_license: string;
-  verified_license: string;
-  olcc_business_name: string;
-  match_type: string;
-  verification_notes: string;
-  confidence_score: string;
-  is_verified: string;
+  Survey_Display_Name: string;
+  Hoodie_ID: string;
+  Hoodie_License: string;
+  Verified_License: string;
+  OLCC_Business_Name: string;
+  Match_Type: string;
+  Verification_Notes: string;
+  Confidence_Score: string;
+  Is_Verified: string;
 }
 
 interface DispensaryAutocompleteProps {
@@ -33,7 +33,7 @@ export default function DispensaryAutocomplete({ onSelect, selectedDispensary }:
 
   useEffect(() => {
     if (selectedDispensary) {
-      setQuery(selectedDispensary.survey_display_name || '');
+      setQuery(selectedDispensary.Survey_Display_Name || '');
     }
   }, [selectedDispensary]);
 
@@ -50,7 +50,7 @@ export default function DispensaryAutocomplete({ onSelect, selectedDispensary }:
         const { data, error } = await supabase
           .from('dispensaries')
           .select('*')
-          .ilike('survey_display_name', `%${query}%`)
+          .ilike('Survey_Display_Name', `%${query}%`)
           .limit(10);
 
         if (error) {
@@ -72,7 +72,7 @@ export default function DispensaryAutocomplete({ onSelect, selectedDispensary }:
   }, [query]);
 
   const handleSelect = (dispensary: Dispensary) => {
-    setQuery(dispensary.survey_display_name || '');
+    setQuery(dispensary.Survey_Display_Name || '');
     setIsOpen(false);
     onSelect(dispensary);
   };
@@ -82,7 +82,7 @@ export default function DispensaryAutocomplete({ onSelect, selectedDispensary }:
     setQuery(value);
     
     // Clear selection if user is typing something new
-    if (selectedDispensary && value !== selectedDispensary.survey_display_name) {
+    if (selectedDispensary && value !== selectedDispensary.Survey_Display_Name) {
       onSelect(null as any);
     }
   };
@@ -113,21 +113,21 @@ export default function DispensaryAutocomplete({ onSelect, selectedDispensary }:
               onClick={() => handleSelect(dispensary)}
             >
               <div className="font-medium text-sm">
-                {dispensary.survey_display_name}
+                {dispensary.Survey_Display_Name}
               </div>
               <div className="text-xs text-gray-500 mt-1">
-                {dispensary.hoodie_id && (
-                  <span>ID: {dispensary.hoodie_id}</span>
+                {dispensary.Hoodie_ID && (
+                  <span>ID: {dispensary.Hoodie_ID}</span>
                 )}
-                {dispensary.verified_license && (
-                  <span className="ml-2">License: {dispensary.verified_license}</span>
+                {dispensary.Verified_License && (
+                  <span className="ml-2">License: {dispensary.Verified_License}</span>
                 )}
-                {dispensary.olcc_business_name && (
+                {dispensary.OLCC_Business_Name && (
                   <div className="text-xs text-gray-400 mt-1">
-                    OLCC: {dispensary.olcc_business_name}
+                    OLCC: {dispensary.OLCC_Business_Name}
                   </div>
                 )}
-                {dispensary.is_verified === 'true' && (
+                {dispensary.Is_Verified === 'true' && (
                   <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
                     Verified
                   </span>

@@ -16,9 +16,9 @@ interface Visit {
   notes: string;
   analysis_status: string;
   dispensaries: {
-    survey_display_name: string;
-    hoodie_id: string;
-    olcc_business_name: string;
+    Survey_Display_Name: string;
+    Hoodie_ID: string;
+    OLCC_Business_Name: string;
   };
 }
 
@@ -42,9 +42,9 @@ export default function VisitHistory({ userEmail, refreshTrigger }: VisitHistory
         .select(`
           *,
           dispensaries (
-            survey_display_name,
-            hoodie_id,
-            olcc_business_name
+            Survey_Display_Name,
+            Hoodie_ID,
+            OLCC_Business_Name
           )
         `)
         .eq('rep_email', userEmail)
@@ -112,7 +112,7 @@ export default function VisitHistory({ userEmail, refreshTrigger }: VisitHistory
                     <div className="flex items-center gap-2">
                       <MapPin className="h-4 w-4 text-gray-500" />
                       <span className="font-medium">
-                        {visit.dispensaries?.survey_display_name}
+                        {visit.dispensaries?.Survey_Display_Name}
                       </span>
                     </div>
                     <Badge className={getStatusColor(visit.analysis_status)}>
@@ -132,9 +132,9 @@ export default function VisitHistory({ userEmail, refreshTrigger }: VisitHistory
                     </div>
                   </div>
 
-                  {visit.dispensaries?.olcc_business_name && (
+                  {visit.dispensaries?.OLCC_Business_Name && (
                     <div className="text-xs text-gray-500 mb-1">
-                      OLCC: {visit.dispensaries.olcc_business_name}
+                      OLCC: {visit.dispensaries.OLCC_Business_Name}
                     </div>
                   )}
 

@@ -13,15 +13,15 @@ import { Save, Calendar } from 'lucide-react';
 
 interface Dispensary {
   id: string;
-  survey_display_name: string;
-  hoodie_id: string;
-  hoodie_license: string;
-  verified_license: string;
-  olcc_business_name: string;
-  match_type: string;
-  verification_notes: string;
-  confidence_score: string;
-  is_verified: string;
+  Survey_Display_Name: string;
+  Hoodie_ID: string;
+  Hoodie_License: string;
+  Verified_License: string;
+  OLCC_Business_Name: string;
+  Match_Type: string;
+  Verification_Notes: string;
+  Confidence_Score: string;
+  Is_Verified: string;
 }
 
 interface VisitFormProps {

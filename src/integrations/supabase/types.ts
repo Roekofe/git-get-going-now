@@ -11,43 +11,43 @@ export type Database = {
     Tables: {
       dispensaries: {
         Row: {
-          confidence_score: string | null
+          Confidence_Score: string | null
           created_at: string
-          hoodie_id: string | null
-          hoodie_license: string | null
+          Hoodie_ID: string | null
+          Hoodie_License: string | null
           id: string
-          is_verified: string | null
-          match_type: string | null
-          olcc_business_name: string | null
-          survey_display_name: string | null
-          verification_notes: string | null
-          verified_license: string | null
+          Is_Verified: string | null
+          Match_Type: string | null
+          OLCC_Business_Name: string | null
+          Survey_Display_Name: string | null
+          Verification_Notes: string | null
+          Verified_License: string | null
         }
         Insert: {
-          confidence_score?: string | null
+          Confidence_Score?: string | null
           created_at?: string
-          hoodie_id?: string | null
-          hoodie_license?: string | null
+          Hoodie_ID?: string | null
+          Hoodie_License?: string | null
           id?: string
-          is_verified?: string | null
-          match_type?: string | null
-          olcc_business_name?: string | null
-          survey_display_name?: string | null
-          verification_notes?: string | null
-          verified_license?: string | null
+          Is_Verified?: string | null
+          Match_Type?: string | null
+          OLCC_Business_Name?: string | null
+          Survey_Display_Name?: string | null
+          Verification_Notes?: string | null
+          Verified_License?: string | null
         }
         Update: {
-          confidence_score?: string | null
+          Confidence_Score?: string | null
           created_at?: string
-          hoodie_id?: string | null
-          hoodie_license?: string | null
+          Hoodie_ID?: string | null
+          Hoodie_License?: string | null
           id?: string
-          is_verified?: string | null
-          match_type?: string | null
-          olcc_business_name?: string | null
-          survey_display_name?: string | null
-          verification_notes?: string | null
-          verified_license?: string | null
+          Is_Verified?: string | null
+          Match_Type?: string | null
+          OLCC_Business_Name?: string | null
+          Survey_Display_Name?: string | null
+          Verification_Notes?: string | null
+          Verified_License?: string | null
         }
         Relationships: []
       }
