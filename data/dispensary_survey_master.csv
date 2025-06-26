@@ -1,0 +1,543 @@
+Survey_Display_Name,Hoodie_ID,Hoodie_License,Verified_License,OLCC_Business_Name,Match_Type,Verification_Notes,Confidence_Score,Is_Verified
+A Better Way Medicinal Alternatives LLC - 3255 Washburn Way Suite 4,11957,050-10140009965,050-10140009965,A Better Way Cannabis,License_Exact,Perfect license match,High,Yes
+ARCANNA - Portland - 4605 NE Fremont St suite 105,17577,050-1016538BD86,050-1016538BD86,Arcanna,License_Exact,Perfect license match,High,Yes
+ASAP BUDS COLLECTIVE - Beaverton - 9255 ne rockspring st apt B102,masterauto1734975977061,050-6822,050-6822,ASAP Buds Collective,License_Exact,Perfect license match,High,Yes
+ASAP Buds - Portland - 105 NE 8th Ave,masterauto1734726189020,,050-6822,ASAP Buds Collective,Address_Partial,"Same street address, different business/license",Medium,Yes
+Albany Alternative Health Solutions - 820 Pacific Blvd SE B,11919,050-10052732037,050-1023875D6FF,Green Room (Albany),Address_Partial,"Same street address, different business/license",Medium,Yes
+Amazon Organics - 3443 Hilyard St F,11142,050-1000628466D,050-1000628466D,Amazon Organics,License_Exact,Perfect license match,High,Yes
+AmeriCanna Rx - 8654 NE Sandy Blvd,13758,050-1003040668A,050-1003040668A,AmeriCanna Rx,License_Exact,Perfect license match,High,Yes
+Apothca - Eugene - 1205 Alder St,18344,050-10028857D5D,050-10028857D5D,Apothca,License_Exact,Perfect license match,High,Yes
+Archive Portland - 10645 SE Henry St b,10875,050-100089293F9,050-100089293F9,Archive Portland,License_Exact,Perfect license match,High,Yes
+Attis Trading Company - Cully - 4920 NE Cully Blvd,13680,050-10051193A0E,050-10051193A0E,Attis Trading Company,License_Exact,Perfect license match,High,Yes
+Attis Trading Company - Gladstone - 2606 SE Gladstone St,13494,050-1005120BE71,050-1005120BE71,Attis Trading Company,License_Exact,Perfect license match,High,Yes
+Attis Trading Company - Lincoln City - 3026 NE Hwy 101 #1,11874,050-100515855E1,050-100515855E1,Attis Trading Company,License_Exact,Perfect license match,High,Yes
+Attis Trading Company - Tillamook - 1830 Goodspeed Rd N,10215,050-1005162BFD5,050-1005162BFD5,Attis Trading Company,License_Exact,Perfect license match,High,Yes
+BUDZ Barn - Medford - 3528 South Pacific Hwy ,16419,050-100480492FF,050-1025293A1E7,Budz Barn,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Bahama Buds - Coos Bay - 1415 N BAYSHORE DR,14714,050-10073803B80,050-10073803B80,Bahama Buds,License_Exact,Perfect license match,High,Yes
+Beaver Bowls - 227 SW 6th St,11676,050-100331502C1,050-100331502C1,Beaver Bowls,License_Exact,Perfect license match,High,Yes
+Beaver Bowls Cannabis Showroom - 1434 Pacific Blvd SE,13161,050-1011974206C,050-1011974206C,Beaver Bowls,License_Exact,Perfect license match,High,Yes
+Belushi's Animal House Cannabis Dispensary - 588 E 11TH AVE,11578,050-1004152E8C9,050-10253237933,Belushis Animal House,Address_Partial,"Same street address, different business/license",Medium,Yes
+Better Daze - Eugene - 1910 EMPIRE PARK DR,14488,050-10146546503,050-8953,Better Daze,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Big Foot Bud Company - 109 W Main St,9919,050-10039882706,050-10131,Bigfoot Bud Co.,Address_Partial,"Same street address, different business/license",Medium,Yes
+Blazen Cannabis - 800 US-20,15232,050-10097447A5F,050-10097447A5F,Blazen Cannabis,License_Exact,Perfect license match,High,Yes
+Bloominati Cannabis - 240 SW Washington Ave,13184,050-101408643F8,050-101408643F8,BLOOMINATI CANNABIS CORP,License_Exact,Perfect license match,High,Yes
+Bloominati Cannabis - Forest Grove - 2420 Pacific Ave,masterauto1643668053388,050-101408643F8,050-101408643F8,BLOOMINATI CANNABIS CORP,License_Exact,Perfect license match,High,Yes
+Blue Dream Cannabis and Vintage - Portland - 1436 SE Powell Blvd Frontage Rd,masterauto1655819591648,050-1018267C84D,050-1018267C84D,Blue Dream Cannabis & Vintage,License_Exact,Perfect license match,High,Yes
+Breeze Botanicals - Ashland - 1526 Siskiyou Blvd,12431,050-10001271938,050-13327,Substance,Address_Partial,"Same street address, different business/license",Medium,Yes
+Breeze Botanicals - Gold Hill - 315 2nd Ave,14565,050-1000100101A,050-13324,Substance,Address_Partial,"Same street address, different business/license",Medium,Yes
+Bridge City Collective - North Portland - 4312 N Williams Ave,12422,050-10041989EBF,050-10041989EBF,Bridge City Collective,License_Exact,Perfect license match,High,Yes
+Bridge City Collective - Southeast Portland - 215 SE Grand Ave,11369,050-100420301FA,050-100420301FA,Bridge City Collective,License_Exact,Perfect license match,High,Yes
+Broadway Cannabis Market - Beaverton - 9952 SW Beaverton Hillsdale Hwy,masterauto1622320280182,050-1016124DFA1,050-1016124DFA1,Broadway Cannabis Market,License_Exact,Perfect license match,High,Yes
+Broadway Cannabis Market - McLoughlin Blvd - 219 SW Broadway,masterauto1723835745957,,050-10158286B2C,Broadway Cannabis Market,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Broadway Cannabis Market - Portland - 427 NW Broadway,14139,050-101040688B0,050-101040688B0,Broadway Cannabis Market,License_Exact,Perfect license match,High,Yes
+Broadway Cannabis Market - SW Clay - 1016 SW Clay St,masterauto1745022072689,050-11726,050-11726,Broadway Cannabis Market,License_Exact,Perfect license match,High,Yes
+Broadway Cannabis Market - SW Pearl - 219 SW Broadway,masterauto1677617857757,050-10158286B2C,050-10158286B2C,Broadway Cannabis Market,License_Exact,Perfect license match,High,Yes
+Broadway Cannabis Market Forest Grove Dispensary - 3821 PACIFIC AVE,10458,050-1003884B7AC,050-7413,Broadway Project Inc.,Address_Partial,"Same street address, different business/license",Medium,Yes
+Bud Bros - Brookings - 1240 CHETCO AVE,14281,050-10054414005,050-10054414005,BUD BROS LLC,License_Exact,Perfect license match,High,Yes
+Bud Bros. - Cave Junction - 335 S REDWOOD HWY,12061,050-10056960FF0,050-10056960FF0,BUD BROS LLC,License_Exact,Perfect license match,High,Yes
+Budlandia - Portland - 16440 SE Division St,11503,050-10007839141,050-10007839141,Budlandia,License_Exact,Perfect license match,High,Yes
+Budlandia - Woodward - 8135 SE Woodward St,11099,050-1008031898B,050-10039904AAD,Budlandia,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Buds R Us - Portland - 5262 Ne 31st Ave,masterauto1691167705329,,,,No_Match,Not found in OLCC database,Low,No
+Budz Cannabis Superstore - 3600 Merlin Rd,masterauto1621966749924,050-1016704544A,050-1016704544A,Budz Cannabis Superstore,License_Exact,Perfect license match,High,Yes
+Burnt River Farms - 1055 NW Washington Ave,11277,050-1003704D5A3,050-101908436B5,Burnt River Farms,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Buzz Box - 6611 SE Powell Blvd,20978,,050-1014534AF69,Buzz Box,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Canna Bros - Amity - 108 S Trade St,masterauto1691781529937,,050-10167404EEB,Canna Bros. Amity,Address_Partial,"Same street address, different business/license",Medium,Yes
+Canna Bros - Lebanon - 1111 S Main St,masterauto1674593695113,,050-102229620BA,Canna Bros.,Address_Partial,"Same street address, different business/license",Medium,Yes
+Canna Bros - Stayton - 2420 Martin Dr,16487,050-10107001EDC,050-10107001EDC,Canna Bros. Stayton,License_Exact,Perfect license match,High,Yes
+Canna Bros. - Newberg - 2316 Portland Rd c2,10255,050-10032789CAF,050-10032789CAF,Canna Bros.,License_Exact,Perfect license match,High,Yes
+Canna Bros. - Sheridan - 1210 W Main St,10241,050-10032789CAF,050-10032789CAF,Canna Bros.,License_Exact,Perfect license match,High,Yes
+Canna-Daddy’s Wellness Center - 17020 SE Division St,10567,050-1013745FADA,050-1013745FADA,Canna Daddy's,License_Exact,Perfect license match,High,Yes
+CannaKing Marijuana Dispensaries - 1449 NW Mulholland Dr,10798,050-100366249CB,050-10173159C9A,CannaKing Marijuana Dispensaries,Address_Name,"Same street + business name, different license",Medium_High,Yes
+CannaVida - Bend - 325 NE FRANKLIN Ave,masterauto1621991076697,050-10006946EE11,050-1006946EE11,CannaVida,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Cannabend - 3312 N Hwy 97,15026,050-10027156F6D,050-10027156F6D,Cannabend,License_Exact,Perfect license match,High,Yes
+Cannabis Curb - 4069 NE Martin Luther King Jr Blvd,masterauto1622325249817,050-101564175EC,050-14145,Medizen,Address_Partial,"Same street address, different business/license",Medium,Yes
+Cannabis LLC - 1936 Main St,13490,050-10010193FDD,050-10010193FDD,"Cannabis, LLC",License_Exact,Perfect license match,High,Yes
+Cannabis Nation - Beaverton - 15915 NW Schendel Ave #104,15343,050-100164832B5,050-100164832B5,Cannabis Nation Beaverton,License_Exact,Perfect license match,High,Yes
+Cannabis Nation - Gresham - 1500 NE Division St,13418,050-10020141411,050-10020141411,Cannabis Nation Gresham,License_Exact,Perfect license match,High,Yes
+Cannabis Nation - Oregon City - 1128 Main St,9793,050-10081041764,050-10081041764,Cannabis Nation Oregon City,License_Exact,Perfect license match,High,Yes
+Cannabis Nation - Seaside - 550 S Roosevelt Dr,10751,050-10020483760,050-10020483760,Cannabis Nation - Seaside,License_Exact,Perfect license match,High,Yes
+Cannabis Nation - SunRiver - 56789 Lunar Dr,12541,050-10050484E34,050-10050484E34,Cannabis Nation Sunriver,License_Exact,Perfect license match,High,Yes
+Cannabis and Glass - Ontario - 182 East Ln,15348,050-10127857D22,050-10127857D22,Cannabis & Glass,License_Exact,Perfect license match,High,Yes
+Cannabiz Experience - 333 N Riverside Ave,10266,050-100485158FE,050-100485158FE,"Cannabiz Experience, LLC",License_Exact,Perfect license match,High,Yes
+Cannabliss and Co. - 22nd and Burnside - 2160 W Burnside St,14056,050-100400192AC,050-1025313E179,Chalice Farms,Address_Partial,"Same street address, different business/license",Medium,Yes
+Carefree Cannabis - 5926 NE Killingsworth St,masterauto1629307945381,050-10131389424,050-10140,The Jointery,Address_Partial,"Same street address, different business/license",Medium,Yes
+Chalice Farms - Airport - 13315 NE Airport Way STE 700,9734,050-10086554F25,050-1025344846C,Chalice Farms,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Chalice Farms - Downtown - 823 SW Naito Pkwy,15394,050-10086554F25,050-1025346633F,Chalice Farms,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Chalice Farms - Dundee - 1178 SW OR-99W,11702,050-10079928B63,050-10079928B63,,No_Match,Not found in OLCC database,Low,No
+Chalice Farms - Powell - 5333 SE POWELL BLVD,11882,050-10086554F25,050-10253279DA1,Chalice Farms,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Chalice Farms - Tigard - 16735 SW PACIFIC HWY,15283,050-10079919CD9,050-1025319611D,Chalice Farms,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Chronix Dispensary - Portland - 933 Northeast 82nd Ave,masterauto1691169248744,050-1017648E8FD,050-1017648E8FD,CHRONIX CANNABIS DISPENSARY,License_Exact,Perfect license match,High,Yes
+Citi Zen - Pacific City/Pacific Beach - 6305 Pacific Ave,12787,050-1004766AB16,050-1004766AB16,Citi Zen,License_Exact,Perfect license match,High,Yes
+Cloud 9 Cannabis - 154 Manor St NE,9856,050-100736767B7,050-100736767B7,Cloud 9 Cannabis,License_Exact,Perfect license match,High,Yes
+Club Sky High - 8975 N Lombard St,13589,050-1000235878E,050-1000235878E,Club Sky High,License_Exact,Perfect license match,High,Yes
+Coastal Craft Cannabis - 200 N Roosevelt Dr,masterauto1660320653280,050-10187941F4A,050-10187941F4A,Coastal Craft Cannabis,License_Exact,Perfect license match,High,Yes
+Cola Cove - 13553 SW Pacific Hwy,11721,050-101323878C8,050-101323878C8,Cola Cove,License_Exact,Perfect license match,High,Yes
+Columbia River Herbals - 2630 W 6th St,14134,050-10040800D20,050-10040800D20,Columbia River Herbals LLC,License_Exact,Perfect license match,High,Yes
+Cookies - Eugene - 1158 High St suite 101,14343,050-1017143AEF5,050-12752,Cookies,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Cookies - Halsey - 16102 NE Halsey St ,masterauto1629305276747,050-10128018F70,050-102287075E7,Cookies Halsey,Address_Partial,"Same street address, different business/license",Medium,Yes
+Cookies - Ontario - 2317 NW 11th St,masterauto1698079001680,,050-100037147CC,Cookies,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Cougar Cannabis - 1989 NE Diamond Lake Blvd,15239,050-10049124667,050-10049124667,Cougar Cannabis LLC,License_Exact,Perfect license match,High,Yes
+Crater Cannabis - 1180 Crater Lake Ave,masterauto1673369930556,050-101894058F6,050-101894058F6,Crater Cannabis,License_Exact,Perfect license match,High,Yes
+Cream Cannabis - 47700 NW Sunset Hwy,masterauto1652891356493,050-10145124694,050-10145124694,Cream Cannabis,License_Exact,Perfect license match,High,Yes
+Cultiv8 - Portland SE Woodstock - 5230 SE 52ND AVE,10774,"020-354682D74,0501002749D5F6",050-1021983EA8C,CULTIV8,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Deanz Greenz - Division - 14154 SE Division St,masterauto1629305273668,050-1015964A387,050-10112435901,Deanz Greenz,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Deanz Greenz - Foster - 5625 SE 85th Ave,10171,050-1015964A387,050-100352226E9,Deanz Greenz,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Deanz Greenz - Sandy - 10415 NE Sandy Blvd,9783,050-1015964A387,050-1003518CE3D,Deanz Greenz,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Deep Roots Cannabis - 2155 Olympic St,12235,10004923B1AA,050-1004923B1AA,Deep Roots Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Diamond Cannabis - 300 SW 6th St,14173,050-10053021A3C,050-10053021A3C,Diamond Cannabis,License_Exact,Perfect license match,High,Yes
+DiamondTree - Eastside - Bend - 2715 US-20,10552,050-10000590807,050-10000590807,DiamondTREE,License_Exact,Perfect license match,High,Yes
+DiamondTree - Madras - 380 North Sunset Highway,15238,050-1000076B368,050-1000076B368,DiamondTREE,License_Exact,Perfect license match,High,Yes
+DiamondTree - Westside - Bend - 1233 NW Galveston Ave,14892,050-10000590807,050-10000590807,DiamondTREE,License_Exact,Perfect license match,High,Yes
+Discovery Cannabis - Waldport - 250 SW Hwy 101,13542,050-1014594A9CC,050-1014594A9CC,Discovery Cannabis,License_Exact,Perfect license match,High,Yes
+Doctor's Orders Portland - 3424 NE 82nd Ave,11979,050-1005063D72C,050-1005063D72C,Doctor's Orders,License_Exact,Perfect license match,High,Yes
+Dr. Jolly's - 415 SE 3rd St,9729,050-100033994A3,050-1016622D255,Dr. Jolly's,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Dreamz Dispensary - Eugene - 1000 Obie St,14460,050-1002612F763,050-1023571A62B,Dreams,Address_Partial,"Same street address, different business/license",Medium,Yes
+Electric Lettuce - Alberta - 1313 NE Alberta St,14519,050-1013239D34B,050-1013239D34B,Electric Lettuce Alberta,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Beaverton - 6950 SW 105TH AVE Ste 110,14269,050-1009489D6FC,050-1009489D6FC,Electric Lettuce Denny,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Cedar Hills - 1450 SW Marlow Ave,13341,050-100241747B3,050-100241747B3,Electric Lettuce Cedar Hills,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Damascus - 15252 OR-224 Suite B,13972,050-10086554F25,050-10086554F25,,No_Match,Not found in OLCC database,Low,No
+Electric Lettuce - Eugene - 1201 W 11th Ave,16312,050-10116834C7B,050-10116834C7B,Electric Lettuce Eugene,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Happy Valley - 16416 SE Sunnyside Rd,10756,050-101070561E6,050-101070561E6,Electric Lettuce Sunnyside,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Hillsboro - 2795 SE Tualatin Valley Hwy,13656,050-10114962EEF,050-10114962EEF,Electric Lettuce Hillsboro,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Holgate - 12131 SE Holgate Blvd,16326,050-1012021E786,050-1012021E786,Electric Lettuce Holgate,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Lloyd District - 203 NE WEIDLER ST,12372,050-1001702682A,050-1001702682A,Electric Lettuce Lloyd District,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Oregon City - 1279 Molalla Ave,11083,050-100595905E3,050-100595905E3,Electric Lettuce Oregon City,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Sandy Blvd - 2026 NE Sandy Blvd,masterauto1622682071881,050-10140881D51,050-10140881D51,Electric Lettuce Kerns,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Sellwood - 7703 SE 13th Ave,17778,050-101478142AC,050-101478142AC,Electric Lettuce Sellwood,License_Exact,Perfect license match,High,Yes
+Electric Lettuce - Tigard - 11642 SW Pacific Hwy #100,9881,050-1000390AC5A,050-1014532539B,Electric Lettuce Tigard,Address_Partial,"Same street address, different business/license",Medium,Yes
+Electric Lettuce Delivery - Westside - Unspecified,masterauto1649351167604,,,,No_Match,Not found in OLCC database,Low,No
+Electric Lettuce Dispensary - Portland Dekum - 909 NE DEKUM ST,15114,050-10140566C3D,050-10140566C3D,Electric Lettuce Damascus,License_Exact,Perfect license match,High,Yes
+Elevate Northwest - 3700 River Rd N,masterauto1655828737476,5010191166307,050-3904,Minions,Address_Partial,"Same street address, different business/license",Medium,Yes
+Elevation 2150 - 2876 SW 4th Ave Suite 1,masterauto1625664486420,050-100569155C6,050-101702665A6,Elevation 2150,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Emerald City Medicinal - 1474 W 6th Ave,13773,050-10002659379,050-10002659379,Emerald City Medicinal,License_Exact,Perfect license match,High,Yes
+Emerald Triangle - McAndrews - 1818 E McAndrews Rd,masterauto1675965895491,,050-101248731A2,Emerald Triangle Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Emerald Triangle - Roseburg - 1630 NW Garden Valley Blvd,masterauto1670358858832,050-1012006BB1E,050-1012006BB1E,Emerald Triangle Dispensary,License_Exact,Perfect license match,High,Yes
+Emerald Triangle - Table Rock - 5022 Table Rock Rd Central Point,masterauto1670358861921,,050-15199,Emerald Triangle Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Emerald Triangle - Talent - 103 N Pacific Hwy Suite B,13946,050-100342445FA,050-1023191B69C,Emerald Triangle Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Emerald Triangle Dispensary - Albany - 838 Pacific Blvd SE,masterauto1629307945954,050-1012475B14E,050-1012475B14E,Emerald Triangle Dispensary,License_Exact,Perfect license match,High,Yes
+Emerald Triangle Dispensary - Klamath - 3480 Washburn Way ste d,9912,050-10050834F0C,050-1014325BA52,Emerald Triangle Dispensary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Emerald Triangle Dispensary - Medford - 246 E 10th St,10586,050-10050834F0C,050-10824,Emerald triangle Dispensary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Eugene OG - 2045 Franklin Blvd,13721,050-1000954D8AD,050-1000954D8AD,Eugene OG,License_Exact,Perfect license match,High,Yes
+FX420 Recreational Dispensary - 161 NE Garden Valley Blvd Suite 105,13200,050-1008712E87C,050-1008712E87C,FX 420 INC,License_Exact,Perfect license match,High,Yes
+Farm Grass Table - 4140 WCLIFF DR,11116,050-1004661768A,050-1004661768A,Farm Grass Table,License_Exact,Perfect license match,High,Yes
+Farma - 916 SE Hawthorne Blvd,13445,050-1013305B57E,050-1013305B57E,Farma,License_Exact,Perfect license match,High,Yes
+Five Zero Trees - Astoria - 1169 COMMERCIAL ST,10804,050-101405144D4,050-101405144D4,Five Zero Trees Astoria,License_Exact,Perfect license match,High,Yes
+Five Zero Trees - Oregon City - 719 MAIN ST,13726,050-1008759BD28,050-1014054E333,Five Zero Trees Oregon City,Address_Partial,"Same street address, different business/license",Medium,Yes
+Five Zero Trees - Portland West - 5336 SW Beaverton Hillsdale Hwy,12194,050-10140556CE8,050-10140556CE8,Five Zero Trees Portland West,License_Exact,Perfect license match,High,Yes
+Flowr of Lyfe - 114 W Broadway,11157,050-10027689736,050-10027689736,FLOWR OF LYFE,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis - Division St. - 10561 SE Division St,masterauto1647560419821,050-10169465DE0,050-10169465DE0,Floyd's,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis Slabtown - 2515 NW Nicolai St,9603,050-1011662585D,050-1011662585D,Floyd's,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis on 28th - 5217 SE 28th Ave,12664,050-10068514E68,050-10068514E68,Floyd's Fine Cannabis,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis on Broadway - 801 NE Broadway,14635,050-1007632F435,050-1007632F435,Floyd's Fine Cannabis,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis on Columbia - 1602 N Columbia Blvd,masterauto1619128918880,050-1014115A716,050-1014115A716,Floyd's Fine Cannabis,License_Exact,Perfect license match,High,Yes
+Floyd's Fine Cannabis on Sandy - 5944 NE Sandy Blvd,14182,050-1006884F4A9,050-1006884F4A9,Floyd's Fine Cannabis,License_Exact,Perfect license match,High,Yes
+Frontier Farms Cannabis - Hood River - 602 Oak St,17181,050-1013873660A,050-1013873660A,Frontier Farms - Hood River,License_Exact,Perfect license match,High,Yes
+Frontier Farms Cannabis - The Dalles - 609 E 2nd St,masterauto1635238560567,050-1017449E2EB,050-1017449E2EB,Frontier Farms - The Dalles,License_Exact,Perfect license match,High,Yes
+Fyre of Bend - 2650 NE Division St,19591,050-101153999FB,050-7974,FYRE,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Gnome Grown - Alberta - 5012 NE 28th Ave,10088,050-1014882C655,050-1014882C655,Gnome Grown Oregon,License_Exact,Perfect license match,High,Yes
+Gnome Grown - St. Helen - 100 St Helens St,masterauto1629814000730,050-1012848DB9F,050-1012848DB9F,Good Good,License_Exact,Perfect license match,High,Yes
+Gnome Grown Beaver Creek - 2005 Beavercreek Rd,13723,050-1004511D431,050-10257546056,Gnome Grown Oregon,Address_Partial,"Same street address, different business/license",Medium,Yes
+Going Green - Eugene - 439 W 1st Ave,10812,050-10155684476,050-10155684476,Going Green Eugene,License_Exact,Perfect license match,High,Yes
+Going Green Albany - 1225 S Commercial Way SE,13238,050-1005284C8D3,050-1005284C8D3,"Going Green Albany, Inc.",License_Exact,Perfect license match,High,Yes
+Going Green Grand Ronde - 8675 Fort Hill Rd,10530,050-1004054A790,050-1004054A790,Going Green Grand Ronde,License_Exact,Perfect license match,High,Yes
+Going Green Sweet Home - 925 Main St,14059,050-10069997015,050-10069997015,Going Green Sweet Home,License_Exact,Perfect license match,High,Yes
+Good Karma - Good Karma,17673,050-10010073418,050-10010073418,Good Karma,License_Exact,Perfect license match,High,Yes
+Good Life Collective - 193 Marine Dr,10135,050-1017483E9A8,050-1017483E9A8,Good Life Collective,License_Exact,Perfect license match,High,Yes
+Gorge Greenery - 13 Oak St,10147,050-1000163439B,050-1000163439B,Gorge Greenery,License_Exact,Perfect license match,High,Yes
+Grasslands Dispensary - 154 Lawrence St,14439,050-1005305255D,050-1005305255D,Grasslands Dispensary,License_Exact,Perfect license match,High,Yes
+Green Apple N.W. - 24180 SE Borges Rd,10153,050-1004120449B,050-1004120449B,GREEN APPLE NW,License_Exact,Perfect license match,High,Yes
+Green Cross - Hillsboro - 1234 SW BASELINE ST,12067,050-10045653650,050-13006,Green Cross Cannabis Emporium,Address_Partial,"Same street address, different business/license",Medium,Yes
+Green Cross Cannabis Emporium - 1695 Center St NE,masterauto1621985030020,050-10054892BF2,050-13009,Green Cross Cannabis Emporium,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Green Cross Cannabis Emporium - Bend - 341 SW Century Dr,masterauto1619129121452,050-10121623400,050-13003,Green Cross Cannabis Emporium,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Green Cross Cannabis Emporium - River Rd - 3165 River Rd N,13476,050-100137839DD,050-13000,Green Cross Cannabis Emporium,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Green Cross Cannabis Emporium - Salem - 4550 Commercial St SE,10090,050-100137839DD,050-12997,Green Cross Cannabis Emporium,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Green Cross Dispensary - Brownsville - 221 W Bishop Way,10124,050-10055307DA2,050-10055307DA2,Green Cross Dispensary,License_Exact,Perfect license match,High,Yes
+Green Front - Sandy Blvd - 8138 NE Sandy Blvd,masterauto1629300827148,050-10167774072,050-10167774072,GREENFRONT,License_Exact,Perfect license match,High,Yes
+Green Goddess Remedies - 5435 SW Taylors Ferry Rd,14846,050-1000365F3DF,050-1000365F3DF,Green Goddess Remedies,License_Exact,Perfect license match,High,Yes
+Green Gratitude - 10322 SE Holgate Blvd,15631,050-1004550B848,050-1004550B848,Green Gratitude,License_Exact,Perfect license match,High,Yes
+Green Health Associates - 607 State Hwy 99 N,14218,050-1010887904B,050-1010887904B,Green Health Eugene,License_Exact,Perfect license match,High,Yes
+Green Lion - Clackamas - 7000 SE Johnson Creek Blvd,11691,050-1015135E4D3,050-1015135E4D3,Green Lion,License_Exact,Perfect license match,High,Yes
+Green Lion - St. Helens - 365 S Columbia River Hwy,13517,050-1005553BACC,050-1005553BACC,Green Lion,License_Exact,Perfect license match,High,Yes
+Green Mart - 12745 SW Walker Rd #100a,12358,050-10026091C87,050-3779,GM Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Green Mountain Fire - 21951 SE STARK ST,13705,050-10064647FD2,050-10064647FD2,Green Mountain Fire,License_Exact,Perfect license match,High,Yes
+Green Muse - 5515 NE 16th Ave,11462,050-1006382C6BF,050-1006382C6BF,Green Muse LLC,License_Exact,Perfect license match,High,Yes
+Green Oasis - Sellwood - 1035 SE Tacoma St,12002,050-10010749D9A,050-10237733790,Green Oasis Cannabis Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Green Ridge - Pacific City - 34970 Brooten Rd,13274,,050-1022771EB29,Green Ridge Pacific City,Address_Partial,"Same street address, different business/license",Medium,Yes
+Green Ridge Apothecary - 106 NE 8th St,10205,050-10032418898,050-10032418898,Green Ridge Apothecary,License_Exact,Perfect license match,High,Yes
+Green Room - Campus - 111 NW 16th St,14217,050-10038995791,050-10038995791,Green Room (Campus),License_Exact,Perfect license match,High,Yes
+Green Room - Headquarters - 2521 NW 9th St,13100,050-100297375C8,050-100297375C8,Green Room,License_Exact,Perfect license match,High,Yes
+Greenery - Marijuana Delivery Service -  ,18794,050-10090892548,050-10090892548,Greenery,License_Exact,Perfect license match,High,Yes
+HD Botanicals - 51366 US-97,15619,050-10061656460,050-10061656460,HD Botanicals,License_Exact,Perfect license match,High,Yes
+HOMEGROWN - Albany - 921 SE 9th Ave,13046,050-101251607DE,050-101251607DE,,No_Match,Not found in OLCC database,Low,No
+HOMEGROWN - Lansing - 1803 Lansing Ave NE,12097,,050-10253422EAE,Chalice Farms,Address_Partial,"Same street address, different business/license",Medium,Yes
+HOMEGROWN - West Salem - 1077 Edgewater St NW,11589,,050-102533673EC,Homegrown Oregon,Address_Partial,"Same street address, different business/license",Medium,Yes
+Hall Of Strains - 2595 State St,19207,050-101398626C5,050-101398626C5,Hall of Strains,License_Exact,Perfect license match,High,Yes
+Happy Haze - 1409 Oak St,13606,050-1014769D853,050-10246757EF5,Happy Haze,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Happy Leaf - Portland - 1301 NE Broadway St,13514,050-1000146ACE7,050-1000146ACE7,Happy Leaf,License_Exact,Perfect license match,High,Yes
+Hashstoria - Astoria - 229 W Marine Dr #C,10285,020-1007581CF85,050-1007581CF85,HASHSTORIA,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Herbal Choices - Bandon - 50375 US-101,10167,050-100977881FD,050-100977881FD,Herbal Choices,License_Exact,Perfect license match,High,Yes
+Herbal Choices - Charleston - 63247 Troller Rd,9728,050-1003361BA17,050-1003361BA17,Herbal Choices,License_Exact,Perfect license match,High,Yes
+Herbal Choices - Coos Bay - 965 S 1st St,13524,050-1003361BA17,050-1003361BA17,Herbal Choices,License_Exact,Perfect license match,High,Yes
+Herbal Choices - North Bend - 1845 N,13899,050-101188454E0,050-101188454E0,Herbal Choices,License_Exact,Perfect license match,High,Yes
+Herbal Choices - Reedsport - 1891 Winchester Ave,15166,050-10111819607,050-10111819607,Herbal Choices,License_Exact,Perfect license match,High,Yes
+Herbal Remedies 2 - 3940 Commercial St SE,12661,050-1005488731C,050-1005488731C,Herbal Remedies 2,License_Exact,Perfect license match,High,Yes
+"Herban Cannabis Dispensary
+ - 1034 SE 122ND AVE",10022,050-1008480B9A7,050-1023355C084,Herban LLC,Address_Partial,"Same street address, different business/license",Medium,Yes
+Hierba Buena - 3674 Pacific Hwy,9596,050-1007695C5F7,050-1007695C5F7,Hierba Buena,License_Exact,Perfect license match,High,Yes
+High Desert Cannabis - 341 SW 20th St,9950,050-1006029FA55,050-1006029FA55,"High Desert Cannabis, LLC",License_Exact,Perfect license match,High,Yes
+High Lakes Cannabis Co - Maywood Dr - 2820 Maywood Dr,masterauto1641837539629,050-1014111B782,050-1014111B782,High Lakes Cannabis Co,License_Exact,Perfect license match,High,Yes
+High Lakes Cannabis Co - Monmouth - 593 JACKSON ST E,12028,050-1006174477B,050-3134,High Lakes Cannabis Company,Address_Partial,"Same street address, different business/license",Medium,Yes
+High Mountain - 2722 W 2nd St,10454,050-1004070FB52,050-1004070FB52,High Mountain Recreational,License_Exact,Perfect license match,High,Yes
+High Quality - 1435 NW 9th St Unit 110,12518,050-100427322D0,050-10109341201,High Quality,Address_Name,"Same street + business name, different license",Medium_High,Yes
+High Supply - 482 NE 3rd St,masterauto1668106519772,050-1016410334A,050-1016410334A,High Supply,License_Exact,Perfect license match,High,Yes
+Hippy Trip - 249 US-101 suite a,13054,050-1008663DE73,050-1008663DE73,Hippy Trip,License_Exact,Perfect license match,High,Yes
+Hive Cannabis Connect - 2836 W 11th Ave Unit 2,masterauto1683917882004,,050-1024051DEE0,Hive Cannabis Connect,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Home Grown Apothecary - 1937 Northeast Pacific Street,16010,050-101554369CB,050-5608,Home Grown Apothecary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Hood River Naturals - 1020 Wasco St ste k,12173,050-100041086CC,050-100041086CC,Hood River Naturals,License_Exact,Perfect license match,High,Yes
+Hotbox Dispensary - Portland - 5103 NE Fremont St,13168,1004610DCA2,050-1025042BB62,HOTBOX,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Hotbox Farms - Ontario - 325 Goodfellow St,18852,050-10124660E00,050-10124660E00,Hotbox Farms,License_Exact,Perfect license match,High,Yes
+House of Hash - 51456 US-97 #3,21000,050-1012526D914,050-1012526D914,House of Hash,License_Exact,Perfect license match,High,Yes
+Hyroot Organics - 52410 River Pine Rd,masterauto1622324889059,050-1007465E4E4,050-1007465E4E4,Hyroot Organics,License_Exact,Perfect license match,High,Yes
+Ishen Tree - Glisan - 11821 NE Glisan St,10301,050-10088926F6F,050-10088926F6F,kaleafa,License_Exact,Perfect license match,High,Yes
+Jamaica Joel's - 37 W 13th Ave #201,12187,050-10009611DA7,050-10009611DA7,Jamaica Joel's,License_Exact,Perfect license match,High,Yes
+Jayne - 2145 NE Martin Luther King Jr Blvd,17787,050-10041073E5E,050-10041073E5E,Jayne,License_Exact,Perfect license match,High,Yes
+Jenny's Dispensary - Bend - 932 NE 3rd St #1,11670,050-10044623308,050-10044623308,Jenny's Dispensary,License_Exact,Perfect license match,High,Yes
+Justice Cannabis Company - 21558 OR-99E,masterauto1629305272770,050-1016172E2AC,050-1016172E2AC,Justice Cannabis Company,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Co. - Portland - 5232 SE Woodstock Blvd,masterauto1647891617914,050-1001106576F,050-1001106576F,Kaleafa,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Ashland - 1253 Siskiyou Blvd,14449,050-10075721DCC,050-10075721DCC,Kaleafa,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Beaverton - 10920 SW Beaverton Hillsdale Hwy,11091,050-10000407C53,050-10000407C53,Kaleafa,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Gresham - 1450 SE Orient Dr,12682,050-10051364EB2,050-10051364EB2,Kaleafa Gresham,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Hillsboro - 353 SW Walnut St,10165,050-101605722B3,050-101605722B3,Kaleafa,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Oregon City - 19197 S Molalla Ave,14689,050-1015536CD46,050-1015536CD46,Kaleafa,License_Exact,Perfect license match,High,Yes
+Kaleafa Cannabis Company - Tigard - 11540 SW Pacific Hwy,18064,050-10120566338,050-10171104DF0,Kaleafa,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Kind Heart Collective - (address is correct,11620,050-1000396C575,050-1000396C575,Kind Heart Collective,License_Exact,Perfect license match,High,Yes
+Kind Leaf- Pendleton - 1733 SW Court Ave,11615,050-10053577FB7,050-10053577FB7,KIND LEAF PENDLETON,License_Exact,Perfect license match,High,Yes
+Kings of Canna - 1465 NE Prescott St C,13219,050-10024220915,050-10024220915,Kings of Canna,License_Exact,Perfect license match,High,Yes
+Kingston’s Cannabis Dispensary - 2366 Ashland St,masterauto1656100627631,050-1022344EC85,050-1022344EC85,Kingston Cannabis Company,License_Exact,Perfect license match,High,Yes
+Klamath Falls Cannabis - 2972 S 6th St C,masterauto1675970439613,050-10160727FB1,050-10160727FB1,Klamath Falls Cannabis LLC,License_Exact,Perfect license match,High,Yes
+Knotty Leaves - 769 N Main St Suite C,18102,050-1004837AEEB,050-10161982296,Knotty Leaves,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Kush Cart Delivery -  ,18596,050-10055625B58,050-10055625B58,Kush Cart,License_Exact,Perfect license match,High,Yes
+Kush Cart | Portland - 5100 SE HARNEY DR,masterauto1660140796922,050-10055625B58,050-10055625B58,Kush Cart,License_Exact,Perfect license match,High,Yes
+LUCKY LION - Halsey - 7817 NE Halsey St,10655,101369028B1,101369028B1,,No_Match,Not found in OLCC database,Low,No
+LUCKY LION - POWELL - 14800 SE Powell Blvd,11291,050-101369028B1,050-101369028B1,LUCKY LION,License_Exact,Perfect license match,High,Yes
+La Mota - Gold Beach - 29844 Ellensburg Ave,16731,050-10079307113,050-10079307113,La Mota,License_Exact,Perfect license match,High,Yes
+La Mota - Taylors Ferry Rd - 1103 SW Taylors Ferry Rd,17775,050-1008270BB4F,050-1008270BB4F,La Mota SW Portland,License_Exact,Perfect license match,High,Yes
+Left Coast Connection LLC - 10055 NE Glisan St,11060,050-10025185011,050-15299,Oregon Cannabis Mart,Address_Partial,"Same street address, different business/license",Medium,Yes
+Lemonnade - PDX - 6218 NE Columbia Blvd,12624,050-1007585AD54,050-1007585AD54,Lemonnade PDX,License_Exact,Perfect license match,High,Yes
+Lemonnade - Portland - 11321 SW 64th Ave,13304,050-10055695C26,050-1020820F3B0,Lemonnade,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Lemonnade - St John's - 8105 N Fessenden St,12042,050-10031851212,050-1021798FA70,Lemonnade St. Johns Inc.,Address_Partial,"Same street address, different business/license",Medium,Yes
+Lifted NorthWest - 11121 SE Division St,10488,050-1005108139A,050-1016274AD84,Lifted Northwest,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Lincoln City Collective - 1266 SW 50th St,13914,050-1004082F8AD,050-1004082F8AD,Lincoln City Collective,License_Exact,Perfect license match,High,Yes
+Little Amsterdam - Portland - 7035 S Macadam Ave,11208,050-1004323E257,050-1004323E257,Little Amsterdam Wellness Center,License_Exact,Perfect license match,High,Yes
+Livewell Dispensary - 696 Hawthorne Ave NE #100,10772,050-100088728CB,050-100088728CB,Livewell Cannabis,License_Exact,Perfect license match,High,Yes
+Livewell Dispensary - Broadway - 1522 Broadway St NE,13283,050-100869451F2,050-100869451F2,Livewell Dispensary,License_Exact,Perfect license match,High,Yes
+Local Herb Collective - 15948 SE Division St,14207,050-1004764F055,050-1004764F055,Local Herb,License_Exact,Perfect license match,High,Yes
+Local Leaf - 7625 SW Oleson Rd,10670,050-10002314A19,050-10174822DB9,Local Leaf,Address_Name,"Same street + business name, different license",Medium_High,Yes
+"Lovebuzz - Broadway
+ - 6802 NE Broadway",15341,050-10142963DF4,050-10238567E69,Love Buzz,Address_Partial,"Same street address, different business/license",Medium,Yes
+Lovebuzz on Glisan - 5425 NE Glisan St,masterauto1646416797109,050-101205209E9,050-101205209E9,Love Buzz,License_Exact,Perfect license match,High,Yes
+Lucky Lion - Eugene - 2164 W 7th Ave,14537,050-1009099F609AG-L1058960A,050-10157958B19,LUCKY LION,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Lucky Lion - Sandy - 16148 NE Sandy Blvd,16425,,050-1016201C7BC,LUCKY LION,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Lucky Lion - Springfield - 2147 Main St,masterauto1708113594457,,050-1025540764D,Lucky Lion,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Marie Janes Cannabis Connection - 568 SW 3rd St,11557,050-10046559560,050-10046559560,Marie Janes Cannabis Connection,License_Exact,Perfect license match,High,Yes
+Maritime Cafe - 17417 SE McLoughlin Blvd,13183,050-10000680436,050-10000680436,MARITIME CAFE,License_Exact,Perfect license match,High,Yes
+Mary Jane's Farmacy - 1729 Center St NE #170,12298,050-10044474E1C,050-1024356B0E5,Mary Jane's Farmacy,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Mindrite Dispensary - 1780 NW Marshall St,14316,050-10036766B3B,050-1025388328A,Sensible Cannabis Company,Address_Partial,"Same street address, different business/license",Medium,Yes
+Mint Cannabis Company - 625 SW 10th Ave,masterauto1657581238943,050-10221550293,050-10221550293,Mint Cannabis Co.,License_Exact,Perfect license match,High,Yes
+Miracle Greens - Bend - 905 SE 3rd St,10267,050-10008384059,050-10008384059,Miracle Greens,License_Exact,Perfect license match,High,Yes
+Modern Forest - 634 S Main St,12041,050-10052346C33,050-10243221743,Modern Forrest,Address_Partial,"Same street address, different business/license",Medium,Yes
+Modern Forest - Sweet Home - 160 Main St,masterauto1654542100333,,050-102436818C6,Modern Forrest,Address_Partial,"Same street address, different business/license",Medium,Yes
+Mongoose Cannabis Co. - 3123 SE Belmont St,masterauto1619664287934,050-101105215C0,050-101105215C0,Mongoose Cannabis,License_Exact,Perfect license match,High,Yes
+Monmouth Cannabis - 210 Pacific Hwy W South,15379,050-100479383D7,050-100479383D7,Monmouth Cannabis,License_Exact,Perfect license match,High,Yes
+Mood Fine Cannabis - 40 RIVER LOOP RD #2,14541,050-1003141C1C9,050-1003141C1C9,,No_Match,Not found in OLCC database,Low,No
+Moss Crossing - 2751 Friendly St,13971,050-100386665E6,050-11681,Moss Crossing,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Mother Earth Medicines - 36 S Riverside Ave,14129,050-10088018221,050-10088018221,,No_Match,Not found in OLCC database,Low,No
+Mr. Nice Guy - Astoria - Bond - 730 BOND ST,11785,050-100883848C4,050-100883848C4,Mr. Nice Guy Bond St.,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Astoria - Olney - 690 OLNEY AVE,12550,050-1004346113D,050-1004346113D,Mr. Nice Guy Astoria,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Bend - 224 SE DAVIS AVE,11249,050-10135587382,050-10135587382,Mr. Nice Guy Bend,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Cornelius - 3146 E BASELINE ST ,15974,020-1065447D305010111201EE2,020-1065447D305010111201EE2,,No_Match,Not found in OLCC database,Low,No
+Mr. Nice Guy - Corvallis -15th St - 687 SW 15TH ST,15010,050-1008848DCF8,050-1008848DCF8,Mr. Nice Guy - 3rd St,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Holgate - 11030 SE HOLGATE BLVD,9730,050-100099996CC,050-100099996CC,Mr. Nice Guy Holgate,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Lebanon - THClear - 712 PARK ST,13298,050-10085557734,050-10085557734,The Oz. House,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Market St Salem - 2794 MARKET ST NE,12663,050-1008335A9E3,050-1008335A9E3,Mr. Nice Guy Market St,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Medford JACKSON - 609 E JACKSON ST,12072,05-10001DB871D,050-10116382457,Mr. Nice Guy Retail,Address_Partial,"Same street address, different business/license",Medium,Yes
+Mr. Nice Guy - Rockaway Beach - 656 US-101,9703,050-100435382A3,050-100435382A3,Mr. Nice Guy Rockaway,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Veneta - 25561 OR-126,14181,050-10010004FFE,050-10010004FFE,Mr. Nice Guy Veneta,License_Exact,Perfect license match,High,Yes
+Mr. Nice Guy - Waldport - 220 OR-34,11733,050-10010057BC0,050-10010057BC0,Mr. Nice Guy Waldport,License_Exact,Perfect license match,High,Yes
+Mystic Moss Dispensary - Corvallis - 119 Southwest 4th St,masterauto1743029116124,050-8714,050-8714,Mystic Moss,License_Exact,Perfect license match,High,Yes
+NW Compassion Medical Center - 1970 NE 238th Dr,11360,050-10158844904,050-10158844904,"NW Compassion Medical Center, Inc",License_Exact,Perfect license match,High,Yes
+Natural Remedies - 8700 SW Barbur Ct,10051,050-10045414F9E,050-10045414F9E,Natural Remedies,License_Exact,Perfect license match,High,Yes
+"Natural Remedies - Portland East
+ - 9810 E Burnside St",11177,050-10047179FEF,050-1017115637F,Natural Remedies,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Natural Wonders - Portland - 3831 SE Main St,14115,050-1003343AD7E,050-1003343AD7E,Natural Wonders,License_Exact,Perfect license match,High,Yes
+Nebula Cannabis - 11605 SE Powell Blvd,15598,050-10104115CC6,050-10104115CC6,Nebula Cannabis,License_Exact,Perfect license match,High,Yes
+Nectar - 122nd and Division - 2367 SE 122nd Ave,masterauto1641383421653,050-10163048F86,050-10163048F86,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - 122nd and Holladay - 1019 NE 122nd Ave,15097,050-1011298F0B2,050-1011298F0B2,Nectar Markets,License_Exact,Perfect license match,High,Yes
+Nectar - Aloha - 20595 SW Tualatin Valley Hwy,12390,050-10150638165,050-10150638165,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Ashland Main - 488 N Main St,10497,050-1004450CCA0,050-1017934966E,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Barbur - 10931 SW 53rd Ave,10980,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Beaverton Allen - 14195 SW Allen Blvd,11650,,050-1008285A7DD,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Beaverton Hall - 8705 SW Hall Blvd,13026,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Beaverton Hillsdale - 4709 SW Beaverton Hillsdale Hwy,14750,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Beaverton Hillsdale Hwy - 10477 SW Beaverton Hillsdale Hwy,masterauto1640902997483,050-10126352F60,050-10126352F60,"Nectar Markets, LLC",License_Exact,Perfect license match,High,Yes
+Nectar - Beaverton Regatta - 15930 SW Regatta Ln,12254,050-10087509BD5,050-10087509BD5,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Eugene 6th - 698 W 6th Ave,11848,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Eugene River - 340 River Rd,15076,050-1009286BD03,050-1009286BD03,Nectar Markets,License_Exact,Perfect license match,High,Yes
+Nectar - Forest Grove - 3331 Pacific Ave,15041,050-1011718F505,050-1011718F505,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Grants Pass - 162 NE Beacon Dr Suite 105,masterauto1646414149944,050-101796000AF,050-101796000AF,Nectar; Nectar Markets,License_Exact,Perfect license match,High,Yes
+Nectar - Gresham - 505 NW Burnside Rd,10743,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Gresham 162nd - 407 SE 162nd Ave,masterauto1647530415266,,050-10167486CA7,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Gresham 3rd - 2445 SE 3rd St,masterauto1648665947005,050-101825983BC,050-101825983BC,Nectar; Nectar Markets,License_Exact,Perfect license match,High,Yes
+Nectar - Gresham Halsey - 1624 NE 181st Ave,masterauto1622324945591,050-1011795F274,050-1011795F274,"Nectar Markets, LLC",License_Exact,Perfect license match,High,Yes
+Nectar - Happy Valley - 10201 SE 82nd Ave,masterauto1640903001600,050-10175503366,050-10175503366,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Hillsboro - 1180 SE 13th Ave,20965,050-1015130EFE0,050-1015130EFE0,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Medford - 259 E Barnett Rd #1,14910,050-10068220B65,050-101676773B7,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Milwaukie Harmony - 6335 SE Harmony Rd,14592,050-1015130EFE0,050-1015130EFE0,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Milwaukie McLoughlin - 13800 SE McLoughlin Blvd,11602,050-10109253AEE,050-10109253AEE,"Nectar Markets, LLC",License_Exact,Perfect license match,High,Yes
+Nectar - Mississippi - 4125 N Mississippi Ave,12809,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Ontario 1st St - 1200 SE 1st St,masterauto1656006708031,050-101382780CF,050-101382780CF,"Nectar Markets, LLC",License_Exact,Perfect license match,High,Yes
+Nectar - Portland - 11th - 510 NW 11TH AVE,9766,050-100456999AB,050-3041,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Portland Alberta - 2338 NE Alberta St,masterauto1656100640921,050-10190196896,050-10190196896,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Portland Division - 2123 SE Division St,15486,050-101431471DA,050-101880202BE,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Portland Hawthorne - 2422 SE Hawthorne Blvd,masterauto1645118160459,050-10126270C7D,050-10126270C7D,"Nectar Markets, LLC",License_Exact,Perfect license match,High,Yes
+Nectar - Portland Washington - 9735 SE Washington St,masterauto1659023905906,050-1015716BDCC,050-1015716BDCC,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Salem Commercial - 3514 Commercial St SE,masterauto1650290157043,050-101677217E8,050-101677217E8,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Salem Liberty - 4142 Liberty Rd S,11660,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Sandy - 3350 NE Sandy Blvd,10003,050-10001759551,050-10001759551,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Sandy and 68th - 6714 NE Sandy Blvd,masterauto1630102889786,050-101330248CE,050-10166519CEB,Nectar; Nectar Markets,Address_Partial,"Same street address, different business/license",Medium,Yes
+Nectar - Springfield - 3650 Main St,14522,050-1009286BD03,050-1009286BD03,Nectar Markets,License_Exact,Perfect license match,High,Yes
+Nectar - Stark - 9127 SE Stark St,9910,,050-1005889ADB7,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Nectar - Terwilliger - 8601 SW Terwilliger Blvd,12163,050-1003305612E,050-1003305612E,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Tigard Bull Mountain - 11300 SW Bull Mountain Rd,masterauto1656006720297,050-1016773ED2A,050-1016773ED2A,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Tillamook - 575 Main Ave,10137,050-1003307ED92,050-1003307ED92,Nectar,License_Exact,Perfect license match,High,Yes
+Nectar - Woodstock - 9222 SE Woodstock Blvd,11894,,050-1005285C05B,Nectar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+New Leaf - Midtown - 2215 NE Evans St,14235,050-100028766B5,050-100028766B5,New Leaf Midtown,License_Exact,Perfect license match,High,Yes
+New Millennium - 2893 Oak St,11147,505-1004297C917,050-1004297C917,Solutions of the Millennium LLC,Address_Partial,"Same street address, different business/license",Medium,Yes
+Next Level Wellness - 2837 Willamette St A,15009,050-1000788C835,050-101684733C4,Next Level Wellness,Address_Name,"Same street + business name, different license",Medium_High,Yes
+NoDak Green Prairie - 390 Coburg Rd,13267,050-1000345DEA9,050-1000345DEA9,NoDak Green Prairie,License_Exact,Perfect license match,High,Yes
+Northwest Advantage - Corvallis - 3478 NE Hwy 101,10682,050-100664391F4,050-1023697A509,Lincoln City Collective North,Address_Partial,"Same street address, different business/license",Medium,Yes
+Northwest Cannabis - 17937 SW McEwan Rd,masterauto1642511439658,1016504DD9E,050-10241926F97,Northwest Cannabis Company,Address_Name,"Same street + business name, different license",Medium_High,Yes
+OG Collective - Corvallis - 414 NW 4th St,masterauto1626180291923,050-1016958598D,050-1016958498D,OG Collective,Address_Name,"Same street + business name, different license",Medium_High,Yes
+OG Collective - Liberty - 1617 Liberty St NE,19223,050-101185442C9,050-101185442C9,OG Collective,License_Exact,Perfect license match,High,Yes
+OG Collective - West Salem - 908 Edgewater St NW,16136,,050-1012871B839,OG Collective,Address_Name,"Same street + business name, different license",Medium_High,Yes
+OG Collective Dispensary - Commercial - 3537 Commercial St SE #100,15854,050-100157201FF,050-100157201FF,"OG Collective, LLC",License_Exact,Perfect license match,High,Yes
+OG Collective Dispensary - Cross - 1255 Cross St SE #150,masterauto1641400791173,050-100157201FF,050-100157201FF,"OG Collective, LLC",License_Exact,Perfect license match,High,Yes
+OG Collective Dispensary - Hawthorne - 3410 Hawthorne Ave NE,14587,050-100157201FF,050-100157201FF,"OG Collective, LLC",License_Exact,Perfect license match,High,Yes
+OG Collective Dispensary - Monmouth - 142 N Pacific Hwy W,11614,050-101185442C9,050-101185442C9,OG Collective,License_Exact,Perfect license match,High,Yes
+Oasis Cannabis - Monmouth - 221 Main St E,12140,050-1006107BBE8,050-1006107BBE8,Oasis Cannabis,License_Exact,Perfect license match,High,Yes
+Oasis Cannabis - Seaside - 1111 S Holladay Dr,13177,050-1004580125D,050-1004580125D,Oasis Cannabis,License_Exact,Perfect license match,High,Yes
+Old School Bliss - 2090 Olympic St unit D,masterauto1625664489938,050-1012077A338,050-1012077A338,Old School Bliss,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Beaverton - 3270 SW Cedar Hills Blvd UNIT 104,11125,050-1000652B6CC,050-1000652B6CC,Oregon Bud Company LLC,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Cesar Chavez Portland - 4511 SE Cesar Estrada Chavez Blvd,18028,050-101157106FA,050-101157106FA,Oregon Bud Company,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Clackamas - 16631 SE 82nd Dr,14306,050-10006476DA7,050-10006476DA7,Oregon Bud Company,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Keizer - 3450 River Rd N,15118,050-1000651584B,050-1000651584B,Oregon Bud Company,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Newport - 1155 SW Coast Hwy,11696,050-10006568A0C,050-10006568A0C,Oregon Bud Company,License_Exact,Perfect license match,High,Yes
+Oregon Bud Company - Portland 122nd - 5515 SE 122nd Ave,15613,050-10109202F8F,050-10109202F8F,Oregon Bud Company,License_Exact,Perfect license match,High,Yes
+Oregon Cannabis Co - 1977 Santiam Hwy SE,10837,050-100542973D6,050-100542973D6,Oregon Cannabis Co.,License_Exact,Perfect license match,High,Yes
+Oregon Coast Dispensary - 861 NW Beach Dr,10793,050-1003171DF64,050-1003171DF64,Oregon Coast Dispensary Inc,License_Exact,Perfect license match,High,Yes
+Oregon Euphorics - 70 SW Century Dr #170,13917,050-1013874BDF5,050-1013874BDF5,Oregon Euphorics,License_Exact,Perfect license match,High,Yes
+Oregon Grown Cannabis - 1201 W Stewart Ave,12815,050-1005779006B,050-1005779006B,Oregon Grown Cannabis Recreational Dispensary,License_Exact,Perfect license match,High,Yes
+Oregon Weedery - 2327 NW Kearney St,11028,050-100289392BD,050-100289392BD,Oregon Weedery,License_Exact,Perfect license match,High,Yes
+Oregon's Best Buds - 10128 E Burnside St,9937,050-10032511404,050-11644,Oregon's Best Buds,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Oregon's Finest - Convention Center - 505 NE Grand Ave,masterauto1721429239754,050-1000162E337,050-1000162E337,Oregon's Finest,License_Exact,Perfect license match,High,Yes
+Oregon's Finest - Pearl - 911 NW 14th Ave,14151,050-1000161114D,050-101843884F6,Oregon's Finest,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Oregon's Green Rush - 2644 River Rd,14354,050-10004429B31,050-10004429B31,Oregon's Green Rush,License_Exact,Perfect license match,High,Yes
+Oregon's Herbal Remedies - 88344 Territorial Hwy,13005,050-1000929AF4B,050-1000929AF4B,Oregon's Herbal Remedies,License_Exact,Perfect license match,High,Yes
+Oregrown - Bend - 1199 NW Wall St,14772,050-10035451904,050-10035451904,Oregrown Bend,License_Exact,Perfect license match,High,Yes
+Oregrown - Cannon Beach - 215 N Hemlock St,10027,050-10076398349,050-10171226BE6,Oregrown Cannon Beach,Address_Partial,"Same street address, different business/license",Medium,Yes
+Oregrown - Portland - The Eiger Building,10858,050-10084944C37,050-10084944C37,,No_Match,Not found in OLCC database,Low,No
+POPS - 264 Sixth St Unit A Corner of HWY 101 and,masterauto1647525472598,1016923EE82,1016923EE82,,No_Match,Not found in OLCC database,Low,No
+Pakalolo PDX - 1528 SE Holgate Blvd,15008,050-10040109FC7,050-1025833AB25,Pakalolo PDX,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Papa Buds - 4020 SE Cesar Estrada Chavez Blvd,10505,050-1006287B0C6,050-1006287B0C6,Papa Buds,License_Exact,Perfect license match,High,Yes
+Paradise Found - Milwaukieno - 10655 SE 42nd Ave,14929,050-1008521615D,050-8703,Sensible Cannabis Co,Address_Partial,"Same street address, different business/license",Medium,Yes
+Paradise Found - Portland - 10735 NE Halsey St,15281,050-1004337113E,050-1004337113E,Paradise Found,License_Exact,Perfect license match,High,Yes
+Parlour Cannabis Shoppe - 4702 SW Scholls Ferry Rd,14682,050-1017674D3AA,050-1017674D3AA,Parlour Cannabis,License_Exact,Perfect license match,High,Yes
+Peach Cannabis - 1553 Oak St,12893,050-1016162FFA8,050-1016162FFA8,Peach Cannabis,License_Exact,Perfect license match,High,Yes
+Pendleton Cannabis - 816 Southgate,15336,050-10050472A58,050-1022732561B,Pendleton Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Phresh Cannabis - 2743 19th Ave,9722,050-1003982A725,050-1003982A725,Phresh Cannabis,License_Exact,Perfect license match,High,Yes
+Phresh Start - Barger - 4925 Barger Dr A,masterauto1649272426028,050-100912345DE,050-100912345DE,Phresh Start,License_Exact,Perfect license match,High,Yes
+Phresh Start - Cottage Grove - 710 Row River Rd,masterauto1706901668873,,050-1025285F717,Phresh Start,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Phresh Start - Springfield - 1623 21st St suite b,11372,050-1004716B1DB,050-1004716B1DB,Phresh Start LLC,License_Exact,Perfect license match,High,Yes
+Pioneer Cannabis - Coos Bay - 63049 US-101,12946,1004300A56B,1004300A56B,,No_Match,Not found in OLCC database,Low,No
+Pioneer Cannabis Co. - 141 SE 5th St,12410,050-1010879025E,050-1010879025E,Pioneer Cannabis Co.,License_Exact,Perfect license match,High,Yes
+Pipe Dreams Dispensary - Lincoln City - 1745 SE Hwy 101,14487,050-10001832DA7,050-10001832DA7,Pipe Dreams Dispensary,License_Exact,Perfect license match,High,Yes
+Plane Jane's Dispensary - Portland - 10530 NE Simpson St,14736,050-1004832102C,050-1004832102C,Plane Jane's,License_Exact,Perfect license match,High,Yes
+Plantae Health - Bend - 2115 NE Hwy 20 #107,10654,050-10022589CE7,050-10022589CE7,Plantae,License_Exact,Perfect license match,High,Yes
+Plantae Health Center - Madras - 1100 US-97 #103,11315,050-10037199BA2,050-10037199BA2,Plantae,License_Exact,Perfect license match,High,Yes
+Plus Dispensary - 45 NE 122nd Ave,11435,050-101048392D3,050-101048392D3,Plus Dispensary,License_Exact,Perfect license match,High,Yes
+Portland Best Buds - 6313 N Lombard St UNIT B,11463,050-10015902FDC,050-10015902FDC,Portland Best Buds,License_Exact,Perfect license match,High,Yes
+Portland Dispensary - Weed Land - 4027 N Interstate Ave,16824,050-1015918D2F6,050-1015918D2F6,Weed Land Inc,License_Exact,Perfect license match,High,Yes
+Pot Mates - 4607 SW Beaverton Hillsdale Hwy,19052,050-101144582D7,050-101144582D7,PotMates,License_Exact,Perfect license match,High,Yes
+Potland - 1761 NE Dekum St,masterauto1619131711601,050-10113847600,050-10113847600,PotLand,License_Exact,Perfect license match,High,Yes
+PottonMouth Retail Cannabis - 950 SE Sheridan Rd,10582,050-1009127E8AF,050-1009127E8AF,PottonMouth Retail Cannabis,License_Exact,Perfect license match,High,Yes
+Power Plant Foster - Portland - 10215 SE Foster Rd,14378,050-10113069B02,050-10113069B02,Power Plant,License_Exact,Perfect license match,High,Yes
+Power Plant on Thurman - 2384 NW Thurman St,12839,,050-10023615819,Thurman Street Collective,Address_Partial,"Same street address, different business/license",Medium,Yes
+Preserve Oregon - 1201 Commercial St SE,12082,050-1009465D34F,050-1009465D34F,Preserve Oregon,License_Exact,Perfect license match,High,Yes
+Pur Roots - 5816 NE Portland Hwy,13153,050-1004701F805,050-1004701F805,Pur Roots,License_Exact,Perfect license match,High,Yes
+Purple Sunset LLC - Astoria - 3115 S Hemlock St,masterauto1712591460798,,050-1025430AE4A,PURPLE SUNSET,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Red Eye - Ontario - 833 SW 30th St,masterauto1690581212805,050-1016408A189,050-1016408A189,The Red Eye,License_Exact,Perfect license match,High,Yes
+Redbarn Dispensary - Main St Springfield - 4360 Main St,masterauto1713559172414,,050-10182183EBE,REDBARN DISPENSARY,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Redbarn Dispensary - Myrtle Creek - 1069 N Old Pacific Hwy,14165,050-1004542CDD8,050-1004542CDD8,Redbarn Cannabis,License_Exact,Perfect license match,High,Yes
+Redbarn Dispensary - Myrtle Point - 1107 Maryland Ave,16812,050-1012469940D,050-1012469940D,Redbarn Dispensary,License_Exact,Perfect license match,High,Yes
+Redbarn Dispensary - Roseburg - 1810 NE Stephens St,15014,050-10116104A8C,050-10116104A8C,Redbarn Dispensary,License_Exact,Perfect license match,High,Yes
+Redbarn Dispensary - Springfield - 1045 Gateway Loop,masterauto1635785477762,050-1005168B9ED,050-1005168B9ED,Redbarn Dispensary,License_Exact,Perfect license match,High,Yes
+Redbarn Dispensary - Umpqua St. - 634 W Umpqua St,masterauto1641383629648,050-1012469940D,050-1012469940D,Redbarn Dispensary,License_Exact,Perfect license match,High,Yes
+Refinery Dispensary - 2707 NE Broadway,14589,050-1003834AEE9,050-1003834AEE9,Refinery Canna Connoisseur,License_Exact,Perfect license match,High,Yes
+Ripped City Greenz - 15591 SE McLoughlin Blvd,masterauto1656082525278,,050-1023557271F,Ripped City Greenz,Address_Name,"Same street + business name, different license",Medium_High,Yes
+River City - Merlin - 115 Galice Rd,12285,050-1016693DF27,050-1016693DF27,River City Retail,License_Exact,Perfect license match,High,Yes
+Rogue River Herbal PMC - Oregon - 510 E Main St,13480,1001576D112,050-1001576D112,Rogue River Herbal PMC,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Rogue Valley Cannabis - Ashland - 505 Siskiyou Blvd,10977,050-101344798CE,050-102427410E5,Rogue Valley Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Rogue Valley Cannabis - Central Point - 6388 Crater Lake Ave,10276,050-10051449C85,050-10242763B45,Rogue Valley Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Rogue Valley Cannabis - Medford - 2060 W Main St,13840,050-1008483E7CB,050-10242705456,Rogue Valley Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Rose Budz PDX - 2410 N Mississippi Ave,masterauto1626180295985,050-10168108EB5,050-10168108EB5,Rose Budz PDX,License_Exact,Perfect license match,High,Yes
+Rosebud Growers Cannabis Shop - 2637 NE Martin Luther King Jr Blvd B,17062,050-101562607D1,050-102398996F1,Rose Bud Incorporated,Address_Partial,"Same street address, different business/license",Medium,Yes
+SWED.CO - 2058 NW Burnside Rd,18567,050-1004330B65D,050-1004330B65D,Swed.co,License_Exact,Perfect license match,High,Yes
+Salem Organics - 4980 Commercial St SE,13568,050-1008736780D,050-1008736780D,"Salem Organics, LLC",License_Exact,Perfect license match,High,Yes
+Satchel - Portland - 6900 N Interstate Ave,14932,050-10008176667,050-10008176667,satchel,License_Exact,Perfect license match,High,Yes
+Sensible Cannabis Company - 3338 N Pacific Hwy,12129,050-101133291FA,050-101133291FA,Sensible Cannabis Company,License_Exact,Perfect license match,High,Yes
+Sensible Cannabis Company - Portland - 1926 NE 40th Ave,masterauto1670010207714,050-10201128197,050-10201128197,Sensible Cannabis Company,License_Exact,Perfect license match,High,Yes
+Serra Belmont - 2519 SE Belmont St,9786,050-1001606EE83,050-1001606EE83,Serra Belmont,License_Exact,Perfect license match,High,Yes
+Shango - Harold - 8056 SE Harold St,13090,050-10034516B89,050-10034516B89,SHANGO PREMIUM CANNABIS,License_Exact,Perfect license match,High,Yes
+Silver Creek Dispensary - 307 E Main St,10714,050-10096429A3B,050-10096429A3B,Silver Creek Dispensary,License_Exact,Perfect license match,High,Yes
+SkunkRx - 8979 Rogue River Hwy,11033,050-10050652956,050-14983,SkunkRX,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Smiles Cannabis - 655 NE Chestnut Ave,masterauto1629814002759,050-101648406F4,050-101648406F4,Smiles,License_Exact,Perfect license match,High,Yes
+Smoke On The Mountain - Welches - 23860 E Arrah Wanna Blvd,11480,050-10045349EFC,050-10045349EFC,SMOKE ON THE MOUNTAIN LLC,License_Exact,Perfect license match,High,Yes
+Smooth Roots - Astoria - 491 W Marine Dr,masterauto1654534195598,050-10183318D9E,050-10251865797,Smooth Roots Astoria,Address_Partial,"Same street address, different business/license",Medium,Yes
+Smooth Roots - Lincoln City - 325 SE Hwy 101,masterauto1625060903569,050-10162945466,050-10162945466,,No_Match,Not found in OLCC database,Low,No
+Smooth Roots - Portland - 5938 N Greeley Ave,masterauto1667506866855,050-102238492F7,050-10248989E6D,Smooth Roots Greeley,Address_Partial,"Same street address, different business/license",Medium,Yes
+Smooth Roots Cannabis - 1500 SW Baker St,11432,050-1015469C6E0,050-102431446CC,Smooth Roots McMinnville,Address_Partial,"Same street address, different business/license",Medium,Yes
+Smooth Roots Dispensary - Veneta - 25805 OR-126 b,masterauto1646414145811,10183129536,10183129536,,No_Match,Not found in OLCC database,Low,No
+Smooth Roots PDX - 15 Northeast Monroe Street,masterauto1664823463760,,,,No_Match,Not found in OLCC database,Low,No
+Somewhere Dispensary - 2128 NW Overton St,14315,050-10088208976,050-10088208976,Somewhere,License_Exact,Perfect license match,High,Yes
+Southern Oregon Cannabis Connection - 1950 NE 7th St,12958,050-1005629EC8B,050-1005629EC8B,Southern Oregon Cannabis Connection,License_Exact,Perfect license match,High,Yes
+SpaceBuds The Dispensary - 741 Lincoln St,10710,050-100580873A9,050-100580873A9,SpaceBuds,License_Exact,Perfect license match,High,Yes
+Speedy Janes - 733 SW Dennis Ave,12256,050-1006350ECEF,050-1006350ECEF,Speedy Janes,License_Exact,Perfect license match,High,Yes
+Stinkin Budz - Salem - 1040 Commercial St SE,13706,105-10052885D4C,050-3915,Stinkin Budz,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Stone Age Farmacy PDX - 8621 SW Canyon Dr,10278,050-1000292877D,050-3658,Stone Age Farmacy,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Substance - Cottage Grove - 2715 Row River Rd Suite A,masterauto1660170438612,050-1016174005F,050-1016174005F,Substance,License_Exact,Perfect license match,High,Yes
+Substance - Empire - 20365 Empire Ave Ste 140,9701,050-1004487C310,050-1004487C310,Substance,License_Exact,Perfect license match,High,Yes
+Substance - Medford - 1749 E McAndrews Rd,masterauto1713557208658,050-10170556BAB,050-10170556BAB,Substance,License_Exact,Perfect license match,High,Yes
+Substance - Midtown - 1814 NE Division St,15497,050-10044860EA3,050-10044860EA3,Substance,License_Exact,Perfect license match,High,Yes
+Substance - Southside - 61406 S Hwy 97,11858,050-1009165329F,050-1009165329F,SUBSTANCE,License_Exact,Perfect license match,High,Yes
+Substance - Springfield OR - 2329 Olympic St,masterauto1690571234110,050-10165853E96,050-10165853E96,Substance,License_Exact,Perfect license match,High,Yes
+Sumpter's Nugget - 160 Mill St Ste 102,12939,050-10047883377,050-10047883377,Sumpter Nugget,License_Exact,Perfect license match,High,Yes
+Sunray Cannabis - 1347 Oregon Coast Hwy,11619,050-1003823E63C,050-1003823E63C,Sunray Cannabis,License_Exact,Perfect license match,High,Yes
+Sweet Leaf Illusions - 8434 SE 82nd Ave,10951,050-10059292304,050-10059292304,Sweet Leaf Illusions,License_Exact,Perfect license match,High,Yes
+Sweet Relief - St. Helens - 1809 Columbia Blvd,11552,050-10025563EE3,050-10025563EE3,Sweet Relief St. Helens,License_Exact,Perfect license match,High,Yes
+Sweet Tree Farms - 4097 W 11th Ave,11911,050-10042166E81,050-10042166E81,Sweet Tree Farms,License_Exact,Perfect license match,High,Yes
+THC Recreation Station - Salem - 1295 Oxford St SE,12144,050-10044175634,050-10044175634,THC Recreation Station Salem,License_Exact,Perfect license match,High,Yes
+THX - Portland - 4931 NE 33rd Ave,masterauto1722890515205,,050-1024521338D,THX,Address_Name,"Same street + business name, different license",Medium_High,Yes
+TJ's on Broadway - Salem - 1487 Broadway St NE,masterauto1637681420978,050-1017432812F,050-9260,Up N Smoke,Address_Partial,"Same street address, different business/license",Medium,Yes
+TJ's on Willamette - 1027 Willamette St,11909,,050-12602,TJ's Downtown Eugene,Address_Partial,"Same street address, different business/license",Medium,Yes
+Tangent Farmacy - 32990 OR-99E,11715,050-100562112C2,050-100562112C2,Tangent Farmacy,License_Exact,Perfect license match,High,Yes
+Terpene Station - Eugene - 645 River Rd #3,12021,050-1011403433E,050-3131,Terpene Station,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Tetra Cannabis - Troutdale - 809 NE Harlow Rd,10598,050-101114664FA,050-101114664FA,Tetra Cannabis,License_Exact,Perfect license match,High,Yes
+The Arboretum - Florence - 1541 US-101,11240,050-1007718656B,050-1007718656B,The Arboretum,License_Exact,Perfect license match,High,Yes
+The Bake Shop - Salem - 3125 Portland Rd NE B,17038,050-1010641CEDD,050-1010641CEDD,The Bake Shop,License_Exact,Perfect license match,High,Yes
+The Bakery - Lafayette - 373 Bridge St,masterauto1731718014071,,,,No_Match,Not found in OLCC database,Low,No
+The Belmont Collective - 2036 SE Belmont St,12427,050-1000942FDE4,050-1025752BB23,Belmont Collective,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Bud House - 115 NE 2nd St,20993,050-101386729BA,050-101386729BA,The Bud House,License_Exact,Perfect license match,High,Yes
+The CDC Dispensary - Portland - 10015 SW Hall Blvd Ste B,10650,050-1003846F031,050-1003846F031,The CDC Dispensary,License_Exact,Perfect license match,High,Yes
+The Canna Shoppe - 6316 NE Halsey St,11044,050-10099690C5E,050-10099690C5E,The Canna Shoppe,License_Exact,Perfect license match,High,Yes
+The Canna Shoppe - Anchor Way - 925 N Anchor Way,masterauto1688156536150,,050-10239351C35,The Canna Shoppe,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Chronic on Commercial - 3024 Commercial St SE,masterauto1679775902760,050-10226326FC2,050-10226326FC2,The Chronic on Commercial,License_Exact,Perfect license match,High,Yes
+The Dime Store - Portland - 8218 SE Holgate Blvd,masterauto1629306891242,050-10127610CE8,050-10127610CE8,,No_Match,Not found in OLCC database,Low,No
+The Dispensary on 52nd - 4452 SE 52nd Ave,13194,050-1000236A6D2,050-1000236A6D2,The Dispensary on 52nd,License_Exact,Perfect license match,High,Yes
+The Farmacy - Astoria - 2911 Marine Dr suite b,14186,050-10109648FB8,050-10239278FFE,The Farmacy,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Farmers Daughters Dispensary - 1025 Chetco Ave,13774,050-100825128A0,050-3480,The Farmers Daughters,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Flower Room - Bend - 817 NW HILL ST,14797,050-1007975177C,050-1021698ED82,The Flower Room - Bend Downtown,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Flower Room - Tumalo - 64619 US-20,masterauto1696605661572,,,,No_Match,Not found in OLCC database,Low,No
+The Green Front - Glisan - 6834 NE Glisan St,14317,050-100236001BA,050-100236001BA,THE GREEN FRONT,License_Exact,Perfect license match,High,Yes
+The Green Planet - Aloha - 21600 SW Tualatin Valley Hwy,masterauto1688400101485,050-10137563D3B,050-10137563D3B,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - Beaverton - 10100 SW Canyon Rd,14308,050-1002260AA4F,050-1002260AA4F,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - Canby - 25496 S Hwy 99 E,19015,050-1002483A9C1,050-1002483A9C1,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - King City - 15350 SW 116th Ave #2658,13984,050-1002260AA4F,050-1002260AA4F,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - Lake Oswego - 15171 Bangy Rd,masterauto1699653861335,050-1014408AB28,050-1014408AB28,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - Milwaukie - 15080 SE McLoughlin Blvd #2825,12465,050-1002483A9C1,050-1002483A9C1,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Planet - Newberg - 301 W 1st St,masterauto1740786795390,050-10158479E34,050-10158479E34,"The Green Planet, Inc.",License_Exact,Perfect license match,High,Yes
+The Green Planet - Powell - 17332 SE Powell Blvd,masterauto1629305275722,050-1011548412A,050-1011548412A,The Green Planet,License_Exact,Perfect license match,High,Yes
+The Green Remedy - Portland - 12436 SE Powell Blvd,15316,050-1003394CD52,050-101869530C3,The Green Remedy,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Green Room Dispensary - Corvallis - South - 1665 SW 3rd St,masterauto1743196343860,050-1015927ADFE,050-1015927ADFE,Green Room (South),License_Exact,Perfect license match,High,Yes
+The Greener Side - River rd - 1407 River Rd,10471,050-1007242C532,050-1007242C532,The Greener Side Detroit Lake,License_Exact,Perfect license match,High,Yes
+The Herb Center - Bend - 2205 NE Division St,11958,050-1000391EED7,050-1016525DC37,The Herb Center,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Herb Center - Oregon City - 921 7th St,masterauto1629814005858,050-10171352370,050-10171352370,The Herb Center,License_Exact,Perfect license match,High,Yes
+The Herbal Connection - OR - 463 River Ave,13641,,050-100035555F6,The Herbal Connection,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Herbsman - 1244 S Riverside Ave,15538,050-10052360AEA,050-10211129638,The Herbsman,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The House of Dank - 379 Fir Ave,13199,050-10092871208,050-10092871208,The House of Dank LLC,License_Exact,Perfect license match,High,Yes
+The Joint on Market - Salem - 3270 Market St NE,18675,050-1000080680D,050-1000080680D,The Joint On Market,License_Exact,Perfect license match,High,Yes
+The Joint on State - 2350 State St,19266,050-1002423E8DA,050-1002423E8DA,The Joint on State,License_Exact,Perfect license match,High,Yes
+The Local Market - Bend - 1216 NE 1st St,15637,050-1004132F2CF,050-102468369DF,Local Market,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Lucky Leaf - Silverton - 208 Jersey St,13381,050-1001843EA13,050-1001843EA13,The Lucky Leaf,License_Exact,Perfect license match,High,Yes
+The Medication Station - Cottage Grove - 1041 N Pacific Hwy,11455,050-1002566EF10,050-1002566EF10,The Medication Station,License_Exact,Perfect license match,High,Yes
+The Medication Station - Newport - 454 SW Coast Hwy,10291,050-10025655A62,050-10025655A62,The Medication Station,License_Exact,Perfect license match,High,Yes
+The New Amsterdam - Kerby - 24394 Redwood Hwy,14831,050-10042321958,050-10245470240,The New Amsterdam,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The New Amsterdam - Lakeview - 15 N F St,11803,050-10085813943,050-10085813943,The New Amsterdam,License_Exact,Perfect license match,High,Yes
+The New Amsterdam - Portland - 2201 N Killingsworth St,10698,050-10034282CCC,050-10034282CCC,The New Amsterdam,License_Exact,Perfect license match,High,Yes
+The People's Wellness Center - 71 Centennial Loop Suite B,14484,050-10049104CFE,050-10049104CFE,The People's Wellness Center,License_Exact,Perfect license match,High,Yes
+The Rock Dispensary - 1911 Lancaster Dr NE,masterauto1635209158480,050-10170663A49,050-10170663A49,The Rock Dispensary,License_Exact,Perfect license match,High,Yes
+The Spot Cannabis Collective - Ashland - 2590 Crater Lake Hwy,masterauto1716738566107,,050-1010254919C,The Spot Cannabis Collective,Address_Name,"Same street + business name, different license",Medium_High,Yes
+The Spot Cannabis Collective - N. Medford - 2590 Crater Lake Hwy,15736,050-1010254919C,050-1010254919C,The Spot Cannabis Collective,License_Exact,Perfect license match,High,Yes
+The Spot Cannabis Collective -S. Medford - 1345 Center Dr D,masterauto1656082502790,050-10170233BF0,050-10170233BF0,The Spot Cannabis Collective,License_Exact,Perfect license match,High,Yes
+Three Kings Organics - 224 Terminal Ave A,12062,050-10039622D6B,050-10039622D6B,Three Kings Organics,License_Exact,Perfect license match,High,Yes
+Thur's Smoke Shop - 502 SE 16th St,11320,050-100697186A7,050-100697186A7,Thur's Smoke Shop,License_Exact,Perfect license match,High,Yes
+Thur's Smoke Shop - Ontario - 2380 N Verde Dr ,masterauto1743783226772,,050-6674,Thur's Smoke Shop,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Tj's on Powell - 7827 SE Powell Blvd,13997,050-10146522DCF,050-10146522DCF,TJ's on Powell,License_Exact,Perfect license match,High,Yes
+Today's Herbal Choice - Barbur - 9220 SW Barbur Blvd #107,12929,050-1010496F611,050-1010496F611,"Today's Herbal Choice Barbur, LLC",License_Exact,Perfect license match,High,Yes
+Today's Herbal Choice - Forest Grove - 3130 Pacific Ave,masterauto1728330181979,050-6783,050-6783,"Today's Herbal Choice Forest Grove, LLC",License_Exact,Perfect license match,High,Yes
+Today's Herbal Choice - Milwaukie - 3087 SE Monroe St,15418,10153550A2B,050-10153550A2B,"Today's Herbal Choice Milwaukie, LLC",Address_Partial,"Same street address, different business/license",Medium,Yes
+Today's Herbal Choice - Molalla - 31568 OR-213,14215,,,,No_Match,Not found in OLCC database,Low,No
+Today's Herbal Choice - Rainier - 75936 Rock Crest St,12720,1004252574B,1004252574B,,No_Match,Not found in OLCC database,Low,No
+Today's Herbal Choice - Stayton - 494 Wilco Rd,14823,050-10129165BBF,050-10129165BBF,"Today's Herbal Choice Stayton, LLC",License_Exact,Perfect license match,High,Yes
+Today's Herbal Choice - Tillamook - 2180 Larson Rd,20966,050-101187459CB,050-101187459CB,Today's Herbal Choice Tillamook LLC,License_Exact,Perfect license match,High,Yes
+Tokyo Starfish - 3rd st - 923 SE 3rd St,9604,050-1011273FDDC,050-1011273FDDC,Tokyo Starfish 3,License_Exact,Perfect license match,High,Yes
+Tokyo Starfish - Box Factory - 542 NW Arizona Ave,13548,050-1000360C340,050-1000360C340,Tokyo Starfish,License_Exact,Perfect license match,High,Yes
+Tokyo Starfish - South HWY 97 - 61230 S Hwy 97,12981,050-100516333C2,050-100516333C2,Tokyo South,License_Exact,Perfect license match,High,Yes
+Top Crop - Corvallis - 1945 NW 9th St,16147,050-1004475152E,050-10169436254,Top Crop Cannabis,Address_Partial,"Same street address, different business/license",Medium,Yes
+Top Crop - Eugene - 3170 W 11th Ave STE A,11978,050-1013202F7FC,050-1025684D895,Top Crop Cannabis,Address_Partial,"Same street address, different business/license",Medium,Yes
+Top Crop - Ontario - 297 SE 10th St,14352,050-10139850F54,050-1025676E5DC,Top Crop Cannabis,Address_Partial,"Same street address, different business/license",Medium,Yes
+Top Hat Express - 11916 SE 22nd Ave Unit B,14954,050-101338246B5,050-101338246B5,Top Hat Express,License_Exact,Perfect license match,High,Yes
+Top Shelf Cannabis - McMinnville - 353 SE Baker St,13141,,050-1001649DE75,Top Shelf Cannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Top Shelf Medicine - Bend - 815 NE Greenwood Ave,15313,050-1003951867F,050-1003951867F,Top Shelf Medicine,License_Exact,Perfect license match,High,Yes
+Top Shelf Medicine - Newport - 657 SW Coast Hwy,masterauto1629307946980,050-1011675DFC6,050-1011675DFC6,Top Shelf Medicine,License_Exact,Perfect license match,High,Yes
+Top Shelf Wellness Center - Medford - 1925 Elm Ave,masterauto1629305277764,050-1016131A101,050-1016131A101,Top Shelf Wellness Center,License_Exact,Perfect license match,High,Yes
+Top Shelf Wellness Center - Phoenix - 205 N Phoenix Rd,13478,050-1013444DEA1,050-1013444DEA1,Top Shelf Wellness Center,License_Exact,Perfect license match,High,Yes
+Top Shelf Wellness Center - White City - 7162 Crater Lake Hwy,11029,050-1012246E7D7,050-1012246E7D7,Top Shelf Wellness Center,License_Exact,Perfect license match,High,Yes
+Track Town Collective - 3675 Franklin Blvd,15160,050-100427434E1,050-100427434E1,Track Town Collective,License_Exact,Perfect license match,High,Yes
+Treasure Valley Cannabis Company - 560 SE 12th Ave,13700,050-1014181B573,050-1014181B573,Treasure Valley Cannabis Company,License_Exact,Perfect license match,High,Yes
+Tree House Collective - North - 5701 N Lombard St,masterauto1721229793327,10225541A5A,050-10225541A5A,Treehouse North,Address_Partial,"Same street address, different business/license",Medium,Yes
+TreeHouse Collective - 2419 NE Sandy Blvd,11178,050-1004294B93A,050-1004294B93A,Tree House Collective,License_Exact,Perfect license match,High,Yes
+Trees Dispensary - 102nd Portland - 1234 NE 102nd Ave,12466,050-10036004097,050-1017498EBF0,Trees Oregon LLC,Address_Partial,"Same street address, different business/license",Medium,Yes
+Trees Dispensary - SW Corbett Portland - 3607 S Corbett Ave,14125,050-1011165272A,050-10174806A48,"Trees Oregon, LLC",Address_Partial,"Same street address, different business/license",Medium,Yes
+Treestar - 1385 Industrial Ave Suite 1,10460,020100706617D5,050-1007069E349,Treestar,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Tropicannabis Club - 1817 Cascade Ave,13588,,050-10231163EB4,Tropicannabis,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Truly Pure - 1006 SE Grand Ave #104,11198,060100388704F8,050-1003244C082,TRULY PURE,Address_Name,"Same street + business name, different license",Medium_High,Yes
+"Truth Dispensary - Center
+ - 2345 Center St NE",15543,050-100674091C2,050-1024663670B,Truth Dispensary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Truth Dispensary - Coops - 1025 Lancaster Dr Southeast,masterauto1746928253478,,050-12696,Truth Dispensary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Truth Dispensary - Lancaster - 1735 Lancaster Dr NE,14262,050-10103753D2B,050-10103753D2B,Truth Dispensary,License_Exact,Perfect license match,High,Yes
+Tumbleweed Cannabis Co - North 310,17774,050-10051014E88,050-10051014E88,,No_Match,Not found in OLCC database,Low,No
+Twenty After Four Wellness Center - 420 Blair Blvd,12595,050-1001915EA16,050-4747,Twenty After Four Wellness,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Urban Farmacy - 420 NE 60th Ave,12477,050-10038053342,050-10038053342,Urban Farmacy,License_Exact,Perfect license match,High,Yes
+Vibe - Amberlight - Portland - 2407 SE 49th Ave,17420,050-1014138FB3D,050-1014138FB3D,Amberlight Cannabis House,License_Exact,Perfect license match,High,Yes
+WeedAgain - Eugene - 86784 Franklin Blvd A,17634,050-10107199453,050-1022876E6E4,WeedAgain,Address_Name,"Same street + business name, different license",Medium_High,Yes
+WeedAgain - Fairgrounds - 2390 Fairgrounds Rd NE,18825,050-1011660580D,050-1017327FC6B,WeedAgain,Address_Name,"Same street + business name, different license",Medium_High,Yes
+WeedAgain - North Bend - 2674 Broadway Ave,masterauto1721229794353,050-10237673BCC,050-10237673BCC,WeedAgain,License_Exact,Perfect license match,High,Yes
+WeedAgain - Oakridge - 47670 OR-58 Suite B,13544,050-100912345DE,050-100912345DE,Phresh Start,License_Exact,Perfect license match,High,Yes
+Weedbucks - 437 S Central Ave,10728,050-1005582DBA5,050-1005582DBA5,Weedbucks,License_Exact,Perfect license match,High,Yes
+Weedbucks - Merlinweb - 330 Galice Rd,masterauto1658426530834,050-1017346D1E7,050-1017346D1E7,Weedbucks,License_Exact,Perfect license match,High,Yes
+Weedbucks - Rogue River - 204 Madrone St,14032,050-1009177F10C,050-10169186E09,Weedbucks,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Weedology - 591 E IDAHO AVE,10935,050-101385551D0,050-101385551D0,Weedology,License_Exact,Perfect license match,High,Yes
+West Coast Organics - 855 Railroad St,10245,050-1005050D2DA,050-13921,WEST COAST ORGANICS,Address_Name,"Same street + business name, different license",Medium_High,Yes
+West Salem Cannabis - 2625 Salem Dallas Hwy NW,13001,050-10009873CDF,050-10009873CDF,West Salem Cannabis,License_Exact,Perfect license match,High,Yes
+Western Oregon - Beaverton - 19665 SW Tualatin Valley Hwy Suite A,masterauto1666030582553,,050-1012887F9A0,Western Oregon Dispensary,Address_Partial,"Same street address, different business/license",Medium,Yes
+Western Oregon Dispensary - Cedar Mill - 760 NW Dale Ave,11634,,,,No_Match,Not found in OLCC database,Low,No
+Western Oregon Dispensary - Hilsboro - 652 SW Baseline St,20956,050-10124782846,050-10124782846,Western Oregon Dispensary,License_Exact,Perfect license match,High,Yes
+Western Oregon Dispensary - Lake Oswego - 17750 Lower Boones Ferry Rd,masterauto1748629729732,050-1014405321C,050-1014405321C,Western Oregon Dispensary,License_Exact,Perfect license match,High,Yes
+Western Oregon Dispensary - Newberg - 1013 N Springbrook Rd,12192,,050-10042907A13,Western Oregon Dispensary Inc,Address_Partial,"Same street address, different business/license",Medium,Yes
+Western Oregon Dispensary - Sherwood - 15025 SW Tualatin-Sherwood Rd,13872,OMMD00477,050-101043554F6,Western Oregon Dispensary,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Willamette Valley Cannabis - 8265 SE McLoughlin Blvd,16842,050-100008156B4,050-1022872F919,Willamette Valley Cannabis Company,Address_Name,"Same street + business name, different license",Medium_High,Yes
+Xclusive Taste Retail - 5821 SE Powell Blvd,masterauto1709914303779,,050-1017832BF9E,Xclusives Taste,Address_Partial,"Same street address, different business/license",Medium,Yes
+Yachats Cannabis Company - 430 Hwy 101 N,10523,050-1011062F6DA,050-1011062F6DA,Yachats Cannabis Company,License_Exact,Perfect license match,High,Yes
+Zion Cannabis - Ontario - 340 SE 13th St,19064,050-10151557699,050-10151557699,Zion,License_Exact,Perfect license match,High,Yes
+Zion Cannabis - Portland - 2331 SW 6th Ave,12172,050-10039294D00,050-10039294D00,Zion Cannabis,License_Exact,Perfect license match,High,Yes
+Zuni Farm Stand Dispensary - 3540 Demaray Dr Suite B,masterauto1665070932365,050-1015330739B,050-1015330739B,Zuni Products,License_Exact,Perfect license match,High,Yes
