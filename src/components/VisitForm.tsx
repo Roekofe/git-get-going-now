@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
@@ -7,9 +6,11 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 import { useToast } from '@/hooks/use-toast';
 import DispensaryAutocomplete from './DispensaryAutocomplete';
-import { Save, Calendar } from 'lucide-react';
+import TargetSelector from './TargetSelector';
+import { Save, Calendar, Target } from 'lucide-react';
 
 interface Dispensary {
   id: string;
@@ -115,10 +116,34 @@ export default function VisitForm({ userEmail, onSubmitSuccess }: VisitFormProps
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
-          <DispensaryAutocomplete
-            onSelect={setSelectedDispensary}
-            selectedDispensary={selectedDispensary}
-          />
+          {/* Priority Targets Section */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-green-700 font-medium">
+              <Target className="h-5 w-5" />
+              <h3>Select from Priority Targets (Recommended)</h3>
+            </div>
+            <TargetSelector
+              onSelect={setSelectedDispensary}
+              selectedDispensary={selectedDispensary}
+            />
+          </div>
+
+          {/* Divider with OR */}
+          <div className="relative">
+            <Separator />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="bg-white px-2 text-sm text-muted-foreground">OR</span>
+            </div>
+          </div>
+
+          {/* Fallback Dispensary Search */}
+          <div className="space-y-2">
+            <Label className="text-muted-foreground">Search All Dispensaries</Label>
+            <DispensaryAutocomplete
+              onSelect={setSelectedDispensary}
+              selectedDispensary={selectedDispensary}
+            />
+          </div>
 
           <div className="space-y-2">
             <Label htmlFor="visit-timestamp">Visit Date & Time *</Label>

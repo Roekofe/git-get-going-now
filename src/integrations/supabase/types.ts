@@ -9,6 +9,33 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      cost_parameters: {
+        Row: {
+          created_at: string
+          effective_date: string
+          id: string
+          parameter_name: string
+          parameter_unit: string | null
+          parameter_value: number
+        }
+        Insert: {
+          created_at?: string
+          effective_date?: string
+          id?: string
+          parameter_name: string
+          parameter_unit?: string | null
+          parameter_value: number
+        }
+        Update: {
+          created_at?: string
+          effective_date?: string
+          id?: string
+          parameter_name?: string
+          parameter_unit?: string | null
+          parameter_value?: number
+        }
+        Relationships: []
+      }
       dispensaries: {
         Row: {
           Confidence_Score: string | null
@@ -51,13 +78,114 @@ export type Database = {
         }
         Relationships: []
       }
+      target_dispensaries: {
+        Row: {
+          banner: string | null
+          converted: boolean | null
+          created_at: string
+          dispensary_name: string
+          first_order_month: string | null
+          id: string
+          is_vip: boolean | null
+          match_confidence: number | null
+          matched_dispensary_id: string | null
+          percent_change_ytd: number | null
+          priority_score: number | null
+          report_month: string
+          sales_apr: number | null
+          sales_feb: number | null
+          sales_jan: number | null
+          sales_mar: number | null
+          sales_may: number | null
+          smokiez_sales_ytd: number | null
+          smokiez_share_percent: number | null
+          state: string
+          target_rationale: string | null
+          target_tier: string | null
+          total_sales_ytd: number | null
+          trend_classification: string | null
+          updated_at: string
+        }
+        Insert: {
+          banner?: string | null
+          converted?: boolean | null
+          created_at?: string
+          dispensary_name: string
+          first_order_month?: string | null
+          id?: string
+          is_vip?: boolean | null
+          match_confidence?: number | null
+          matched_dispensary_id?: string | null
+          percent_change_ytd?: number | null
+          priority_score?: number | null
+          report_month: string
+          sales_apr?: number | null
+          sales_feb?: number | null
+          sales_jan?: number | null
+          sales_mar?: number | null
+          sales_may?: number | null
+          smokiez_sales_ytd?: number | null
+          smokiez_share_percent?: number | null
+          state: string
+          target_rationale?: string | null
+          target_tier?: string | null
+          total_sales_ytd?: number | null
+          trend_classification?: string | null
+          updated_at?: string
+        }
+        Update: {
+          banner?: string | null
+          converted?: boolean | null
+          created_at?: string
+          dispensary_name?: string
+          first_order_month?: string | null
+          id?: string
+          is_vip?: boolean | null
+          match_confidence?: number | null
+          matched_dispensary_id?: string | null
+          percent_change_ytd?: number | null
+          priority_score?: number | null
+          report_month?: string
+          sales_apr?: number | null
+          sales_feb?: number | null
+          sales_jan?: number | null
+          sales_mar?: number | null
+          sales_may?: number | null
+          smokiez_sales_ytd?: number | null
+          smokiez_share_percent?: number | null
+          state?: string
+          target_rationale?: string | null
+          target_tier?: string | null
+          total_sales_ytd?: number | null
+          trend_classification?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "target_dispensaries_matched_dispensary_id_fkey"
+            columns: ["matched_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "available_targets"
+            referencedColumns: ["dispensary_id"]
+          },
+          {
+            foreignKeyName: "target_dispensaries_matched_dispensary_id_fkey"
+            columns: ["matched_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "dispensaries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       users: {
         Row: {
           active: boolean | null
           created_at: string
           email: string
+          hourly_rate: number | null
           id: string
           name: string | null
+          rate_effective_date: string | null
           role: string | null
           territory: string | null
         }
@@ -65,8 +193,10 @@ export type Database = {
           active?: boolean | null
           created_at?: string
           email: string
+          hourly_rate?: number | null
           id?: string
           name?: string | null
+          rate_effective_date?: string | null
           role?: string | null
           territory?: string | null
         }
@@ -74,8 +204,10 @@ export type Database = {
           active?: boolean | null
           created_at?: string
           email?: string
+          hourly_rate?: number | null
           id?: string
           name?: string | null
+          rate_effective_date?: string | null
           role?: string | null
           territory?: string | null
         }
@@ -83,39 +215,114 @@ export type Database = {
       }
       visits: {
         Row: {
+          actual_date: string | null
+          actual_drive_distance: number | null
+          actual_fuel_cost: number | null
+          actual_hours_driving: number | null
+          actual_hours_onsite: number | null
+          actual_samples_quantity: number | null
+          actual_samples_value: number | null
+          actual_total_cost: number | null
           analysis_status: string | null
+          cost_variance_percent: number | null
           created_at: string
           dispensary_id: string
+          distance_variance_percent: number | null
           estimated_cost: number | null
           id: string
+          meals_cost: number | null
+          misc_costs: number | null
           notes: string | null
+          planned_date: string | null
+          planned_drive_distance: number | null
+          planned_fuel_cost: number | null
+          planned_hours_driving: number | null
+          planned_hours_onsite: number | null
+          planned_samples_quantity: number | null
+          planned_samples_value: number | null
+          planned_total_cost: number | null
           rep_email: string
           samples_given: string | null
+          swag_cost: number | null
+          target_dispensary_id: string | null
+          target_objective: string | null
+          time_variance_percent: number | null
           visit_purpose: string | null
+          visit_status: string | null
           visit_timestamp: string
         }
         Insert: {
+          actual_date?: string | null
+          actual_drive_distance?: number | null
+          actual_fuel_cost?: number | null
+          actual_hours_driving?: number | null
+          actual_hours_onsite?: number | null
+          actual_samples_quantity?: number | null
+          actual_samples_value?: number | null
+          actual_total_cost?: number | null
           analysis_status?: string | null
+          cost_variance_percent?: number | null
           created_at?: string
           dispensary_id: string
+          distance_variance_percent?: number | null
           estimated_cost?: number | null
           id?: string
+          meals_cost?: number | null
+          misc_costs?: number | null
           notes?: string | null
+          planned_date?: string | null
+          planned_drive_distance?: number | null
+          planned_fuel_cost?: number | null
+          planned_hours_driving?: number | null
+          planned_hours_onsite?: number | null
+          planned_samples_quantity?: number | null
+          planned_samples_value?: number | null
+          planned_total_cost?: number | null
           rep_email: string
           samples_given?: string | null
+          swag_cost?: number | null
+          target_dispensary_id?: string | null
+          target_objective?: string | null
+          time_variance_percent?: number | null
           visit_purpose?: string | null
+          visit_status?: string | null
           visit_timestamp: string
         }
         Update: {
+          actual_date?: string | null
+          actual_drive_distance?: number | null
+          actual_fuel_cost?: number | null
+          actual_hours_driving?: number | null
+          actual_hours_onsite?: number | null
+          actual_samples_quantity?: number | null
+          actual_samples_value?: number | null
+          actual_total_cost?: number | null
           analysis_status?: string | null
+          cost_variance_percent?: number | null
           created_at?: string
           dispensary_id?: string
+          distance_variance_percent?: number | null
           estimated_cost?: number | null
           id?: string
+          meals_cost?: number | null
+          misc_costs?: number | null
           notes?: string | null
+          planned_date?: string | null
+          planned_drive_distance?: number | null
+          planned_fuel_cost?: number | null
+          planned_hours_driving?: number | null
+          planned_hours_onsite?: number | null
+          planned_samples_quantity?: number | null
+          planned_samples_value?: number | null
+          planned_total_cost?: number | null
           rep_email?: string
           samples_given?: string | null
+          swag_cost?: number | null
+          target_dispensary_id?: string | null
+          target_objective?: string | null
+          time_variance_percent?: number | null
           visit_purpose?: string | null
+          visit_status?: string | null
           visit_timestamp?: string
         }
         Relationships: [
@@ -123,17 +330,99 @@ export type Database = {
             foreignKeyName: "visits_dispensary_id_fkey"
             columns: ["dispensary_id"]
             isOneToOne: false
+            referencedRelation: "available_targets"
+            referencedColumns: ["dispensary_id"]
+          },
+          {
+            foreignKeyName: "visits_dispensary_id_fkey"
+            columns: ["dispensary_id"]
+            isOneToOne: false
             referencedRelation: "dispensaries"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "visits_target_dispensary_id_fkey"
+            columns: ["target_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "available_targets"
+            referencedColumns: ["target_id"]
+          },
+          {
+            foreignKeyName: "visits_target_dispensary_id_fkey"
+            columns: ["target_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "target_dispensaries"
             referencedColumns: ["id"]
           },
         ]
       }
     }
     Views: {
-      [_ in never]: never
+      available_targets: {
+        Row: {
+          banner: string | null
+          converted: boolean | null
+          dispensary_id: string | null
+          dispensary_name: string | null
+          hoodie_id: string | null
+          is_vip: boolean | null
+          match_confidence: number | null
+          percent_change_ytd: number | null
+          priority_score: number | null
+          smokiez_share_percent: number | null
+          survey_name: string | null
+          target_id: string | null
+          target_rationale: string | null
+          target_tier: string | null
+          total_sales_ytd: number | null
+          trend_classification: string | null
+          verified_license: string | null
+          visit_status: string | null
+        }
+        Relationships: []
+      }
+      unmatched_targets: {
+        Row: {
+          banner: string | null
+          dispensary_name: string | null
+          priority_score: number | null
+          target_rationale: string | null
+          target_tier: string | null
+          total_sales_ytd: number | null
+          trend_classification: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      calculate_name_similarity: {
+        Args: { name1: string; name2: string }
+        Returns: number
+      }
+      calculate_priority_score: {
+        Args: {
+          p_is_vip: boolean
+          p_state: string
+          p_converted: boolean
+          p_smokiez_share_percent: number
+          p_trend_classification: string
+          p_total_sales_ytd: number
+        }
+        Returns: number
+      }
+      get_target_tier: {
+        Args: {
+          p_is_vip: boolean
+          p_state: string
+          p_converted: boolean
+          p_trend_classification: string
+        }
+        Returns: string
+      }
+      match_target_dispensaries: {
+        Args: Record<PropertyKey, never>
+        Returns: number
+      }
     }
     Enums: {
       [_ in never]: never
