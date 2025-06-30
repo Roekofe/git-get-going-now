@@ -115,6 +115,88 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     }
   };
 
+  const debugShareData = async () => {
+    console.log("=== SHARE DATA DIAGNOSTIC ===");
+
+    // Check raw target_dispensaries data
+    const { data: rawTargets, error } = await supabase
+      .from('target_dispensaries')
+      .select('dispensary_name, target_tier, smokiez_share_percent, is_vip, converted')
+      .eq('state', 'Oregon')
+      .eq('converted', true)
+      .order('target_tier, smokiez_share_percent', { ascending: false });
+
+    if (rawTargets) {
+      console.log("Raw target_dispensaries data:", rawTargets);
+
+      // Group by tier to see share distribution
+      const tierAnalysis = rawTargets.reduce((acc, target) => {
+        const tier = target.target_tier;
+        if (!acc[tier]) acc[tier] = { total: 0, withShare: 0, avgShare: 0 };
+
+        acc[tier].total++;
+        if (target.smokiez_share_percent > 0) {
+          acc[tier].withShare++;
+          acc[tier].avgShare += target.smokiez_share_percent;
+        }
+        return acc;
+      }, {} as Record<string, any>);
+
+      // Calculate averages
+      Object.keys(tierAnalysis).forEach(tier => {
+        if (tierAnalysis[tier].withShare > 0) {
+          tierAnalysis[tier].avgShare = tierAnalysis[tier].avgShare / tierAnalysis[tier].withShare;
+        }
+      });
+
+      console.log("Share analysis by tier:", tierAnalysis);
+    }
+
+    if (error) {
+      console.error("Error fetching raw data:", error);
+    }
+
+    // Also check the available_targets view for comparison
+    const { data: viewTargets, error: viewError } = await supabase
+      .from('available_targets')
+      .select('dispensary_name, target_tier, smokiez_share_percent')
+      .not('dispensary_id', 'is', null)
+      .order('target_tier, smokiez_share_percent', { ascending: false });
+
+    if (viewTargets) {
+      console.log("Available_targets view data:", viewTargets);
+      
+      const viewTierAnalysis = viewTargets.reduce((acc, target) => {
+        const tier = target.target_tier;
+        if (!acc[tier]) acc[tier] = { total: 0, withShare: 0, avgShare: 0 };
+
+        acc[tier].total++;
+        if (target.smokiez_share_percent > 0) {
+          acc[tier].withShare++;
+          acc[tier].avgShare += target.smokiez_share_percent;
+        }
+        return acc;
+      }, {} as Record<string, any>);
+
+      Object.keys(viewTierAnalysis).forEach(tier => {
+        if (viewTierAnalysis[tier].withShare > 0) {
+          viewTierAnalysis[tier].avgShare = viewTierAnalysis[tier].avgShare / viewTierAnalysis[tier].withShare;
+        }
+      });
+
+      console.log("View share analysis by tier:", viewTierAnalysis);
+    }
+
+    if (viewError) {
+      console.error("Error fetching view data:", viewError);
+    }
+
+    toast({
+      title: 'Debug Complete',
+      description: 'Share data diagnostic logged to console',
+    });
+  };
+
   const handleRefresh = () => {
     console.log('Manual refresh triggered');
     fetchTargets(true);
@@ -278,15 +360,25 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       <CardHeader className="pb-3">
         <div className="flex justify-between items-center">
           <CardTitle className="text-lg">Priority Targets</CardTitle>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={handleRefresh}
-            disabled={refreshing}
-            className="h-8 w-8 p-0"
-          >
-            <RefreshCw className={`h-4 w-4 ${refreshing ? 'animate-spin' : ''}`} />
-          </Button>
+          <div className="flex gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={debugShareData}
+              className="h-8 px-2 text-xs"
+            >
+              Debug Share Data
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={handleRefresh}
+              disabled={refreshing}
+              className="h-8 w-8 p-0"
+            >
+              <RefreshCw className={`h-4 w-4 ${refreshing ? 'animate-spin' : ''}`} />
+            </Button>
+          </div>
         </div>
       </CardHeader>
       <CardContent>
