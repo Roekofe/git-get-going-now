@@ -219,6 +219,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         .from('target_dispensaries')
         .update({ smokiez_share_percent: 3.2 })
         .eq('target_tier', 'Revenue_Protection')
+        .order('id')
         .limit(10);
 
       // Update some Growth Expansion targets with share data
@@ -226,6 +227,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         .from('target_dispensaries')
         .update({ smokiez_share_percent: 2.1 })
         .eq('target_tier', 'Growth_Expansion')
+        .order('id')
         .limit(15);
 
       // Update some Maintenance targets with small share data
@@ -233,6 +235,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         .from('target_dispensaries')
         .update({ smokiez_share_percent: 1.5 })
         .eq('target_tier', 'Maintenance')
+        .order('id')
         .limit(20);
 
       if (!error1 && !error2 && !error3) {
