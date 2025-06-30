@@ -59,40 +59,92 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     try {
       if (showRefreshToast) setRefreshing(true);
       
-      console.log('Fetching targets data...');
+      console.log('=== COMPREHENSIVE DATABASE DEBUG ===');
       
+      // First, check if target_dispensaries table has data
+      console.log('1. Checking target_dispensaries table...');
+      const { data: targetData, error: targetError } = await supabase
+        .from('target_dispensaries')
+        .select('*')
+        .limit(5);
+      
+      console.log('Raw target_dispensaries data:', targetData);
+      console.log('Target dispensaries count:', targetData?.length || 0);
+      console.log('Target dispensaries error:', targetError);
+      
+      if (targetData && targetData.length > 0) {
+        console.log('Sample target dispensary record:', targetData[0]);
+        
+        // Check specific filters
+        const { data: oregonData } = await supabase
+          .from('target_dispensaries')
+          .select('*')
+          .eq('state', 'Oregon');
+        console.log('Oregon targets count:', oregonData?.length || 0);
+        
+        const { data: convertedData } = await supabase
+          .from('target_dispensaries')
+          .select('*')
+          .eq('state', 'Oregon')
+          .eq('converted', true);
+        console.log('Oregon converted targets count:', convertedData?.length || 0);
+      }
+      
+      // Check if dispensaries table has data
+      console.log('2. Checking dispensaries table...');
+      const { data: dispensaryData, error: dispensaryError } = await supabase
+        .from('dispensaries')
+        .select('*')
+        .limit(5);
+      
+      console.log('Dispensaries data:', dispensaryData);
+      console.log('Dispensaries count:', dispensaryData?.length || 0);
+      console.log('Dispensaries error:', dispensaryError);
+      
+      // Check if available_targets view exists and has data
+      console.log('3. Checking available_targets view...');
+      const { data: availableData, error: availableError, count } = await supabase
+        .from('available_targets')
+        .select('*', { count: 'exact' })
+        .limit(5);
+      
+      console.log('Available targets raw data:', availableData);
+      console.log('Available targets count:', count);
+      console.log('Available targets error:', availableError);
+      
+      if (availableData && availableData.length > 0) {
+        console.log('Sample available target:', availableData[0]);
+      }
+      
+      // Now try the actual query used by the component
+      console.log('4. Testing component query...');
       const { data, error } = await supabase
         .from('available_targets')
         .select('*')
         .not('dispensary_id', 'is', null)
         .order('priority_score', { ascending: false });
 
-      if (error) {
-        console.error('Error fetching targets:', error);
-        toast({
-          title: 'Error',
-          description: 'Failed to fetch priority targets',
-          variant: 'destructive',
-        });
-        return;
+      console.log('Component query result:', data);
+      console.log('Component query targets length:', data?.length || 0);
+      console.log('Component query error:', error);
+      
+      if (data && data.length > 0) {
+        console.log('Sample component target:', data[0]);
+        
+        // Log share percentages by tier for debugging
+        const shareByTier = data.reduce((acc, target) => {
+          if (!acc[target.target_tier]) {
+            acc[target.target_tier] = [];
+          }
+          acc[target.target_tier].push({
+            name: target.dispensary_name,
+            share: target.smokiez_share_percent
+          });
+          return acc;
+        }, {} as Record<string, any[]>);
+        
+        console.log('Share percentages by tier:', shareByTier);
       }
-
-      console.log('Fetched targets:', data);
-      console.log('Sample target with share data:', data?.[0]);
-      
-      // Log share percentages by tier for debugging
-      const shareByTier = data?.reduce((acc, target) => {
-        if (!acc[target.target_tier]) {
-          acc[target.target_tier] = [];
-        }
-        acc[target.target_tier].push({
-          name: target.dispensary_name,
-          share: target.smokiez_share_percent
-        });
-        return acc;
-      }, {} as Record<string, any[]>);
-      
-      console.log('Share percentages by tier:', shareByTier);
 
       setTargets(data || []);
       
@@ -103,7 +155,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         });
       }
     } catch (error) {
-      console.error('Unexpected error:', error);
+      console.error('Unexpected error in fetchTargets:', error);
       toast({
         title: 'Error',
         description: 'An unexpected error occurred',
