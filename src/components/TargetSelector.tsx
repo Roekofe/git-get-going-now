@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -58,6 +59,8 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     try {
       if (showRefreshToast) setRefreshing(true);
       
+      console.log('Fetching targets data...');
+      
       const { data, error } = await supabase
         .from('available_targets')
         .select('*')
@@ -65,6 +68,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         .order('priority_score', { ascending: false });
 
       if (error) {
+        console.error('Error fetching targets:', error);
         toast({
           title: 'Error',
           description: 'Failed to fetch priority targets',
@@ -73,15 +77,33 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         return;
       }
 
+      console.log('Fetched targets:', data);
+      console.log('Sample target with share data:', data?.[0]);
+      
+      // Log share percentages by tier for debugging
+      const shareByTier = data?.reduce((acc, target) => {
+        if (!acc[target.target_tier]) {
+          acc[target.target_tier] = [];
+        }
+        acc[target.target_tier].push({
+          name: target.dispensary_name,
+          share: target.smokiez_share_percent
+        });
+        return acc;
+      }, {} as Record<string, any[]>);
+      
+      console.log('Share percentages by tier:', shareByTier);
+
       setTargets(data || []);
       
       if (showRefreshToast) {
         toast({
           title: 'Data Refreshed',
-          description: 'Target data has been refreshed with latest share percentages',
+          description: `Updated ${data?.length || 0} targets with latest share percentages`,
         });
       }
     } catch (error) {
+      console.error('Unexpected error:', error);
       toast({
         title: 'Error',
         description: 'An unexpected error occurred',
@@ -94,6 +116,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   };
 
   const handleRefresh = () => {
+    console.log('Manual refresh triggered');
     fetchTargets(true);
   };
 
@@ -212,8 +235,9 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
           
           <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-2">
             <div>YTD Sales: {formatCurrency(target.total_sales_ytd || 0)}</div>
-            <div className={target.smokiez_share_percent > 0 ? 'text-green-600 font-medium' : ''}>
+            <div className={target.smokiez_share_percent > 0 ? 'text-green-600 font-medium' : 'text-red-500'}>
               Share: {target.smokiez_share_percent?.toFixed(1) || 0}%
+              {target.smokiez_share_percent === 0 && <span className="ml-1 text-xs">(No share)</span>}
             </div>
           </div>
           
