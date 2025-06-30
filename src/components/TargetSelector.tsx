@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar, RefreshCw } from 'lucide-react';
+import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar, RefreshCw, Database } from 'lucide-react';
 
 interface Dispensary {
   id: string;
@@ -48,6 +48,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   const [targets, setTargets] = useState<AvailableTarget[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [addingTestData, setAddingTestData] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
@@ -206,6 +207,63 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       title: 'Debug Complete',
       description: 'Share data diagnostic logged to console with actual values',
     });
+  };
+
+  const addTestShareData = async () => {
+    try {
+      setAddingTestData(true);
+      console.log("Adding test share data...");
+
+      // Update some Revenue Protection targets with realistic share percentages
+      const { error: error1 } = await supabase
+        .from('target_dispensaries')
+        .update({ smokiez_share_percent: 3.2 })
+        .eq('target_tier', 'Revenue_Protection')
+        .limit(10);
+
+      // Update some Growth Expansion targets with share data
+      const { error: error2 } = await supabase
+        .from('target_dispensaries')
+        .update({ smokiez_share_percent: 2.1 })
+        .eq('target_tier', 'Growth_Expansion')
+        .limit(15);
+
+      // Update some Maintenance targets with small share data
+      const { error: error3 } = await supabase
+        .from('target_dispensaries')
+        .update({ smokiez_share_percent: 1.5 })
+        .eq('target_tier', 'Maintenance')
+        .limit(20);
+
+      if (!error1 && !error2 && !error3) {
+        console.log("Test share data added! Refresh to see changes.");
+        toast({
+          title: 'Test Data Added',
+          description: 'Added realistic share percentages to test targets. Click refresh to see changes.',
+        });
+        
+        // Auto-refresh the data
+        setTimeout(() => {
+          fetchTargets(true);
+        }, 1000);
+      } else {
+        console.error("Errors adding test data:", { error1, error2, error3 });
+        toast({
+          title: 'Error',
+          description: 'Failed to add test share data',
+          variant: 'destructive',
+        });
+      }
+    } catch (error) {
+      console.error('Unexpected error adding test data:', error);
+      toast({
+        title: 'Error',
+        description: 'An unexpected error occurred',
+        variant: 'destructive',
+      });
+    } finally {
+      setAddingTestData(false);
+    }
   };
 
   const handleRefresh = () => {
@@ -379,6 +437,16 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
               className="h-8 px-2 text-xs"
             >
               Debug Share Data
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={addTestShareData}
+              disabled={addingTestData}
+              className="h-8 px-2 text-xs"
+            >
+              <Database className={`h-3 w-3 mr-1 ${addingTestData ? 'animate-pulse' : ''}`} />
+              {addingTestData ? 'Adding...' : 'Add Test Shares'}
             </Button>
             <Button
               variant="ghost"
