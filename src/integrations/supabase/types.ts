@@ -83,12 +83,15 @@ export type Database = {
           banner: string | null
           converted: boolean | null
           created_at: string
+          custom_cadence_days: number | null
           dispensary_name: string
           first_order_month: string | null
           id: string
           is_vip: boolean | null
+          last_visit_date: string | null
           match_confidence: number | null
           matched_dispensary_id: string | null
+          next_due_date: string | null
           percent_change_ytd: number | null
           priority_score: number | null
           report_month: string
@@ -105,17 +108,21 @@ export type Database = {
           total_sales_ytd: number | null
           trend_classification: string | null
           updated_at: string
+          visit_notes: string | null
         }
         Insert: {
           banner?: string | null
           converted?: boolean | null
           created_at?: string
+          custom_cadence_days?: number | null
           dispensary_name: string
           first_order_month?: string | null
           id?: string
           is_vip?: boolean | null
+          last_visit_date?: string | null
           match_confidence?: number | null
           matched_dispensary_id?: string | null
+          next_due_date?: string | null
           percent_change_ytd?: number | null
           priority_score?: number | null
           report_month: string
@@ -132,17 +139,21 @@ export type Database = {
           total_sales_ytd?: number | null
           trend_classification?: string | null
           updated_at?: string
+          visit_notes?: string | null
         }
         Update: {
           banner?: string | null
           converted?: boolean | null
           created_at?: string
+          custom_cadence_days?: number | null
           dispensary_name?: string
           first_order_month?: string | null
           id?: string
           is_vip?: boolean | null
+          last_visit_date?: string | null
           match_confidence?: number | null
           matched_dispensary_id?: string | null
+          next_due_date?: string | null
           percent_change_ytd?: number | null
           priority_score?: number | null
           report_month?: string
@@ -159,6 +170,7 @@ export type Database = {
           total_sales_ytd?: number | null
           trend_classification?: string | null
           updated_at?: string
+          visit_notes?: string | null
         }
         Relationships: [
           {
@@ -174,6 +186,13 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "dispensaries"
             referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "target_dispensaries_matched_dispensary_id_fkey"
+            columns: ["matched_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "due_targets"
+            referencedColumns: ["dispensary_id"]
           },
         ]
       }
@@ -210,6 +229,33 @@ export type Database = {
           rate_effective_date?: string | null
           role?: string | null
           territory?: string | null
+        }
+        Relationships: []
+      }
+      visit_cadence_settings: {
+        Row: {
+          created_at: string
+          default_cadence_days: number
+          description: string | null
+          id: string
+          target_tier: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          default_cadence_days: number
+          description?: string | null
+          id?: string
+          target_tier: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          default_cadence_days?: number
+          description?: string | null
+          id?: string
+          target_tier?: string
+          updated_at?: string
         }
         Relationships: []
       }
@@ -341,10 +387,24 @@ export type Database = {
             referencedColumns: ["id"]
           },
           {
+            foreignKeyName: "visits_dispensary_id_fkey"
+            columns: ["dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "due_targets"
+            referencedColumns: ["dispensary_id"]
+          },
+          {
             foreignKeyName: "visits_target_dispensary_id_fkey"
             columns: ["target_dispensary_id"]
             isOneToOne: false
             referencedRelation: "available_targets"
+            referencedColumns: ["target_id"]
+          },
+          {
+            foreignKeyName: "visits_target_dispensary_id_fkey"
+            columns: ["target_dispensary_id"]
+            isOneToOne: false
+            referencedRelation: "due_targets"
             referencedColumns: ["target_id"]
           },
           {
@@ -361,12 +421,19 @@ export type Database = {
       available_targets: {
         Row: {
           banner: string | null
+          cadence_status: string | null
           converted: boolean | null
+          custom_cadence_days: number | null
+          days_until_due: number | null
+          default_cadence_days: number | null
           dispensary_id: string | null
           dispensary_name: string | null
+          effective_cadence_days: number | null
           hoodie_id: string | null
           is_vip: boolean | null
+          last_visit_date: string | null
           match_confidence: number | null
+          next_due_date: string | null
           percent_change_ytd: number | null
           priority_score: number | null
           smokiez_share_percent: number | null
@@ -377,6 +444,38 @@ export type Database = {
           total_sales_ytd: number | null
           trend_classification: string | null
           verified_license: string | null
+          visit_notes: string | null
+          visit_status: string | null
+        }
+        Relationships: []
+      }
+      due_targets: {
+        Row: {
+          banner: string | null
+          cadence_status: string | null
+          converted: boolean | null
+          custom_cadence_days: number | null
+          days_until_due: number | null
+          default_cadence_days: number | null
+          dispensary_id: string | null
+          dispensary_name: string | null
+          effective_cadence_days: number | null
+          hoodie_id: string | null
+          is_vip: boolean | null
+          last_visit_date: string | null
+          match_confidence: number | null
+          next_due_date: string | null
+          percent_change_ytd: number | null
+          priority_score: number | null
+          smokiez_share_percent: number | null
+          survey_name: string | null
+          target_id: string | null
+          target_rationale: string | null
+          target_tier: string | null
+          total_sales_ytd: number | null
+          trend_classification: string | null
+          verified_license: string | null
+          visit_notes: string | null
           visit_status: string | null
         }
         Relationships: []
@@ -399,6 +498,14 @@ export type Database = {
         Args: { name1: string; name2: string }
         Returns: number
       }
+      calculate_next_due_date: {
+        Args: {
+          p_target_tier: string
+          p_custom_cadence_days: number
+          p_last_visit_date: string
+        }
+        Returns: string
+      }
       calculate_priority_score: {
         Args: {
           p_is_vip: boolean
@@ -420,6 +527,10 @@ export type Database = {
         Returns: string
       }
       match_target_dispensaries: {
+        Args: Record<PropertyKey, never>
+        Returns: number
+      }
+      update_all_next_due_dates: {
         Args: Record<PropertyKey, never>
         Returns: number
       }

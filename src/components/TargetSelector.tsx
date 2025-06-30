@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, TrendingDown, Shield, Target } from 'lucide-react';
+import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar } from 'lucide-react';
 
 interface Dispensary {
   id: string;
@@ -33,6 +33,11 @@ interface AvailableTarget {
   target_rationale: string;
   converted: boolean;
   is_vip: boolean;
+  effective_cadence_days: number;
+  custom_cadence_days: number;
+  next_due_date: string;
+  cadence_status: string;
+  days_until_due: number;
 }
 
 interface TargetSelectorProps {
@@ -129,6 +134,34 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     }
   };
 
+  const getCadenceText = (days: number) => {
+    if (days <= 7) return 'Weekly';
+    if (days <= 14) return 'Bi-weekly';
+    if (days <= 30) return 'Monthly';
+    if (days <= 60) return 'Bi-monthly';
+    return 'Quarterly';
+  };
+
+  const getCadenceStatusBadge = (status: string, daysUntil: number) => {
+    switch (status) {
+      case 'Overdue':
+        return <Badge variant="destructive" className="text-xs">Overdue</Badge>;
+      case 'Due':
+        return <Badge variant="destructive" className="text-xs">Due for Visit</Badge>;
+      case 'Due Soon':
+        return <Badge variant="secondary" className="text-xs">Due Soon ({daysUntil}d)</Badge>;
+      case 'Not Due':
+        return <Badge variant="outline" className="text-xs">Not Due ({daysUntil}d)</Badge>;
+      default:
+        return <Badge variant="outline" className="text-xs">Unknown</Badge>;
+    }
+  };
+
+  const formatDate = (dateString: string) => {
+    if (!dateString) return 'Not set';
+    return new Date(dateString).toLocaleDateString();
+  };
+
   const TargetCard = ({ target }: { target: AvailableTarget }) => {
     const isSelected = selectedDispensary?.id === target.dispensary_id;
     
@@ -143,7 +176,23 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 <Badge variant="outline" className="text-xs">
                   Score: {target.priority_score}
                 </Badge>
+                {getCadenceStatusBadge(target.cadence_status, target.days_until_due)}
               </div>
+            </div>
+          </div>
+          
+          {/* Cadence Information */}
+          <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
+            <div className="flex items-center gap-1">
+              <Clock className="h-3 w-3" />
+              {getCadenceText(target.effective_cadence_days)}
+              {target.custom_cadence_days && (
+                <span className="text-blue-600">(Custom)</span>
+              )}
+            </div>
+            <div className="flex items-center gap-1">
+              <Calendar className="h-3 w-3" />
+              Next: {formatDate(target.next_due_date)}
             </div>
           </div>
           

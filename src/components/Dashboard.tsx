@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { LogOut, Plus, History, User } from 'lucide-react';
+import { LogOut, Plus, History, Settings } from 'lucide-react';
 import VisitForm from './VisitForm';
 import VisitHistory from './VisitHistory';
+import CadenceSettings from './CadenceSettings';
 import { useToast } from '@/hooks/use-toast';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
 
@@ -57,7 +58,7 @@ export default function Dashboard({ user }: DashboardProps) {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-6">
         <Tabs defaultValue="new-visit" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
+          <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger value="new-visit" className="flex items-center gap-2">
               <Plus className="h-4 w-4" />
               New Visit
@@ -65,6 +66,10 @@ export default function Dashboard({ user }: DashboardProps) {
             <TabsTrigger value="history" className="flex items-center gap-2">
               <History className="h-4 w-4" />
               History
+            </TabsTrigger>
+            <TabsTrigger value="settings" className="flex items-center gap-2">
+              <Settings className="h-4 w-4" />
+              Settings
             </TabsTrigger>
           </TabsList>
 
@@ -80,6 +85,10 @@ export default function Dashboard({ user }: DashboardProps) {
               userEmail={user.email || ''} 
               refreshTrigger={refreshTrigger}
             />
+          </TabsContent>
+
+          <TabsContent value="settings">
+            <CadenceSettings />
           </TabsContent>
         </Tabs>
       </div>
