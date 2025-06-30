@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
-import { Clock, Save, Trash2, Settings } from 'lucide-react';
+import { Clock, Save, Trash2, Settings, Search } from 'lucide-react';
 
 interface CadenceSetting {
   id: string;
@@ -17,14 +17,13 @@ interface CadenceSetting {
   description?: string;
 }
 
-interface CustomCadenceTarget {
+interface AllTarget {
   target_id: string;
   dispensary_name: string;
   target_tier: string;
-  custom_cadence_days: number;
+  custom_cadence_days: number | null;
   effective_cadence_days: number;
-  last_visit_date?: string;
-  next_due_date?: string;
+  default_cadence_days: number;
   visit_notes?: string;
 }
 
@@ -38,7 +37,9 @@ const tierDisplayNames: Record<string, string> = {
 
 export default function CadenceSettings() {
   const [settings, setSettings] = useState<CadenceSetting[]>([]);
-  const [customTargets, setCustomTargets] = useState<CustomCadenceTarget[]>([]);
+  const [allTargets, setAllTargets] = useState<AllTarget[]>([]);
+  const [filteredTargets, setFilteredTargets] = useState<AllTarget[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState<string | null>(null);
   const { toast } = useToast();
@@ -46,6 +47,14 @@ export default function CadenceSettings() {
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    // Filter targets based on search query
+    const filtered = allTargets.filter(target =>
+      target.dispensary_name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredTargets(filtered);
+  }, [allTargets, searchQuery]);
 
   const fetchData = async () => {
     try {
@@ -64,28 +73,27 @@ export default function CadenceSettings() {
         return;
       }
 
-      // Fetch custom cadences
+      // Fetch ALL available targets
       const { data: targets, error: targetsError } = await supabase
         .from('available_targets')
         .select(`
           target_id, dispensary_name, target_tier,
           custom_cadence_days, effective_cadence_days,
-          last_visit_date, next_due_date, visit_notes
+          default_cadence_days, visit_notes
         `)
-        .not('custom_cadence_days', 'is', null)
-        .limit(50);
+        .order('dispensary_name');
 
       if (targetsError) {
         toast({
           title: 'Error',
-          description: 'Failed to fetch custom cadences',
+          description: 'Failed to fetch targets',
           variant: 'destructive',
         });
         return;
       }
 
       setSettings(settingsData || []);
-      setCustomTargets(targets || []);
+      setAllTargets(targets || []);
     } catch (error) {
       toast({
         title: 'Error',
@@ -205,7 +213,7 @@ export default function CadenceSettings() {
   };
 
   const handleCustomValueChange = (targetId: string, field: 'days' | 'notes', value: string | number) => {
-    setCustomTargets(prev => 
+    setAllTargets(prev => 
       prev.map(target => 
         target.target_id === targetId 
           ? { 
@@ -313,42 +321,64 @@ export default function CadenceSettings() {
             </TabsContent>
 
             <TabsContent value="custom-cadences" className="space-y-4 mt-6">
-              {customTargets.length === 0 ? (
+              {/* Search Bar */}
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Search locations..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="pl-10"
+                />
+              </div>
+
+              {filteredTargets.length === 0 ? (
                 <Card className="p-6">
                   <div className="text-center text-muted-foreground">
                     <Clock className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                    <p>No custom cadences set</p>
+                    <p>No locations found</p>
                     <p className="text-sm mt-1">
-                      Individual locations will use their tier defaults
+                      Try adjusting your search query
                     </p>
                   </div>
                 </Card>
               ) : (
-                <div className="space-y-4">
-                  {customTargets.map((target) => (
-                    <Card key={target.target_id} className="p-4">
+                <div className="space-y-4 max-h-96 overflow-y-auto">
+                  {filteredTargets.map((target) => (
+                    <Card key={target.target_id} className={`p-4 ${target.custom_cadence_days ? 'ring-2 ring-blue-200 bg-blue-50/50' : ''}`}>
                       <div className="space-y-4">
                         <div className="flex items-center justify-between">
                           <div>
                             <h3 className="font-medium">{target.dispensary_name}</h3>
-                            <p className="text-sm text-muted-foreground">
-                              {tierDisplayNames[target.target_tier] || target.target_tier}
-                            </p>
-                            {target.next_due_date && (
-                              <p className="text-xs text-muted-foreground">
-                                Next due: {new Date(target.next_due_date).toLocaleDateString()}
+                            <div className="flex items-center gap-2 mt-1">
+                              <p className="text-sm text-muted-foreground">
+                                {tierDisplayNames[target.target_tier] || target.target_tier}
                               </p>
-                            )}
+                              {target.custom_cadence_days ? (
+                                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                  Custom
+                                </span>
+                              ) : (
+                                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                  Tier Default
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs text-muted-foreground">
+                              Current: {getCadenceDescription(target.effective_cadence_days)} 
+                              ({target.effective_cadence_days} days)
+                            </p>
                           </div>
                           
                           <div className="flex items-center gap-2">
-                            <Label className="text-sm">Every</Label>
+                            <Label className="text-sm">Custom Every</Label>
                             <Input
                               type="number"
                               min="1"
                               max="365"
-                              value={target.custom_cadence_days}
-                              onChange={(e) => handleCustomValueChange(target.target_id, 'days', parseInt(e.target.value))}
+                              value={target.custom_cadence_days || ''}
+                              onChange={(e) => handleCustomValueChange(target.target_id, 'days', e.target.value ? parseInt(e.target.value) : null)}
+                              placeholder={target.default_cadence_days.toString()}
                               className="w-16 text-center"
                             />
                             <span className="text-sm text-muted-foreground">days</span>
@@ -383,20 +413,22 @@ export default function CadenceSettings() {
                             ) : (
                               <>
                                 <Save className="h-3 w-3 mr-1" />
-                                Save
+                                Save Custom
                               </>
                             )}
                           </Button>
                           
-                          <Button
-                            size="sm"
-                            variant="outline"
-                            onClick={() => removeCustomCadence(target.target_id)}
-                            disabled={saving === target.target_id}
-                          >
-                            <Trash2 className="h-3 w-3 mr-1" />
-                            Remove Custom
-                          </Button>
+                          {target.custom_cadence_days && (
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              onClick={() => removeCustomCadence(target.target_id)}
+                              disabled={saving === target.target_id}
+                            >
+                              <Trash2 className="h-3 w-3 mr-1" />
+                              Remove Custom
+                            </Button>
+                          )}
                         </div>
                       </div>
                     </Card>
