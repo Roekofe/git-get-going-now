@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -118,7 +117,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   const debugShareData = async () => {
     console.log("=== SHARE DATA DIAGNOSTIC ===");
 
-    // Check raw target_dispensaries data
+    // Check raw target_dispensaries data with actual values
     const { data: rawTargets, error } = await supabase
       .from('target_dispensaries')
       .select('dispensary_name, target_tier, smokiez_share_percent, is_vip, converted')
@@ -127,29 +126,34 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       .order('target_tier, smokiez_share_percent', { ascending: false });
 
     if (rawTargets) {
-      console.log("Raw target_dispensaries data:", rawTargets);
+      // Show first few records with actual values
+      console.log("Sample raw data (first 10 records):");
+      rawTargets.slice(0, 10).forEach((target, index) => {
+        console.log(`${index + 1}. ${target.dispensary_name} (${target.target_tier}): ${target.smokiez_share_percent}% share`);
+      });
 
-      // Group by tier to see share distribution
-      const tierAnalysis = rawTargets.reduce((acc, target) => {
+      // Show breakdown by tier with actual numbers
+      console.log("\n=== TIER BREAKDOWN ===");
+      const tierBreakdown = {} as Record<string, any>;
+      rawTargets.forEach(target => {
         const tier = target.target_tier;
-        if (!acc[tier]) acc[tier] = { total: 0, withShare: 0, avgShare: 0 };
-
-        acc[tier].total++;
-        if (target.smokiez_share_percent > 0) {
-          acc[tier].withShare++;
-          acc[tier].avgShare += target.smokiez_share_percent;
+        if (!tierBreakdown[tier]) {
+          tierBreakdown[tier] = { total: 0, withShare: 0, shareValues: [] };
         }
-        return acc;
-      }, {} as Record<string, any>);
-
-      // Calculate averages
-      Object.keys(tierAnalysis).forEach(tier => {
-        if (tierAnalysis[tier].withShare > 0) {
-          tierAnalysis[tier].avgShare = tierAnalysis[tier].avgShare / tierAnalysis[tier].withShare;
+        tierBreakdown[tier].total++;
+        if (target.smokiez_share_percent > 0) {
+          tierBreakdown[tier].withShare++;
+          tierBreakdown[tier].shareValues.push(target.smokiez_share_percent);
         }
       });
 
-      console.log("Share analysis by tier:", tierAnalysis);
+      Object.keys(tierBreakdown).forEach(tier => {
+        const data = tierBreakdown[tier];
+        console.log(`${tier}: ${data.withShare}/${data.total} have share data`);
+        if (data.shareValues.length > 0) {
+          console.log(`  Share values: ${data.shareValues.join(', ')}%`);
+        }
+      });
     }
 
     if (error) {
@@ -164,27 +168,34 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       .order('target_tier, smokiez_share_percent', { ascending: false });
 
     if (viewTargets) {
-      console.log("Available_targets view data:", viewTargets);
-      
-      const viewTierAnalysis = viewTargets.reduce((acc, target) => {
+      console.log("\n=== AVAILABLE_TARGETS VIEW DATA ===");
+      console.log("Sample view data (first 10 records):");
+      viewTargets.slice(0, 10).forEach((target, index) => {
+        console.log(`${index + 1}. ${target.dispensary_name} (${target.target_tier}): ${target.smokiez_share_percent}% share`);
+      });
+
+      // Show breakdown by tier for view data
+      console.log("\n=== VIEW TIER BREAKDOWN ===");
+      const viewTierBreakdown = {} as Record<string, any>;
+      viewTargets.forEach(target => {
         const tier = target.target_tier;
-        if (!acc[tier]) acc[tier] = { total: 0, withShare: 0, avgShare: 0 };
-
-        acc[tier].total++;
-        if (target.smokiez_share_percent > 0) {
-          acc[tier].withShare++;
-          acc[tier].avgShare += target.smokiez_share_percent;
+        if (!viewTierBreakdown[tier]) {
+          viewTierBreakdown[tier] = { total: 0, withShare: 0, shareValues: [] };
         }
-        return acc;
-      }, {} as Record<string, any>);
-
-      Object.keys(viewTierAnalysis).forEach(tier => {
-        if (viewTierAnalysis[tier].withShare > 0) {
-          viewTierAnalysis[tier].avgShare = viewTierAnalysis[tier].avgShare / viewTierAnalysis[tier].withShare;
+        viewTierBreakdown[tier].total++;
+        if (target.smokiez_share_percent > 0) {
+          viewTierBreakdown[tier].withShare++;
+          viewTierBreakdown[tier].shareValues.push(target.smokiez_share_percent);
         }
       });
 
-      console.log("View share analysis by tier:", viewTierAnalysis);
+      Object.keys(viewTierBreakdown).forEach(tier => {
+        const data = viewTierBreakdown[tier];
+        console.log(`${tier}: ${data.withShare}/${data.total} have share data`);
+        if (data.shareValues.length > 0) {
+          console.log(`  Share values: ${data.shareValues.join(', ')}%`);
+        }
+      });
     }
 
     if (viewError) {
@@ -193,7 +204,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
 
     toast({
       title: 'Debug Complete',
-      description: 'Share data diagnostic logged to console',
+      description: 'Share data diagnostic logged to console with actual values',
     });
   };
 
