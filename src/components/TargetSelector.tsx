@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar } from 'lucide-react';
+import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar, RefreshCw } from 'lucide-react';
 
 interface Dispensary {
   id: string;
@@ -48,14 +47,17 @@ interface TargetSelectorProps {
 export default function TargetSelector({ onSelect, selectedDispensary }: TargetSelectorProps) {
   const [targets, setTargets] = useState<AvailableTarget[]>([]);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
     fetchTargets();
   }, []);
 
-  const fetchTargets = async () => {
+  const fetchTargets = async (showRefreshToast = false) => {
     try {
+      if (showRefreshToast) setRefreshing(true);
+      
       const { data, error } = await supabase
         .from('available_targets')
         .select('*')
@@ -72,6 +74,13 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       }
 
       setTargets(data || []);
+      
+      if (showRefreshToast) {
+        toast({
+          title: 'Data Refreshed',
+          description: 'Target data has been refreshed with latest share percentages',
+        });
+      }
     } catch (error) {
       toast({
         title: 'Error',
@@ -80,7 +89,12 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
       });
     } finally {
       setLoading(false);
+      if (showRefreshToast) setRefreshing(false);
     }
+  };
+
+  const handleRefresh = () => {
+    fetchTargets(true);
   };
 
   const handleTargetSelect = async (target: AvailableTarget) => {
@@ -198,7 +212,9 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
           
           <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-2">
             <div>YTD Sales: {formatCurrency(target.total_sales_ytd || 0)}</div>
-            <div>Share: {target.smokiez_share_percent?.toFixed(1) || 0}%</div>
+            <div className={target.smokiez_share_percent > 0 ? 'text-green-600 font-medium' : ''}>
+              Share: {target.smokiez_share_percent?.toFixed(1) || 0}%
+            </div>
           </div>
           
           <p className="text-xs text-muted-foreground mb-3 line-clamp-2">
@@ -236,7 +252,18 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   return (
     <Card>
       <CardHeader className="pb-3">
-        <CardTitle className="text-lg">Priority Targets</CardTitle>
+        <div className="flex justify-between items-center">
+          <CardTitle className="text-lg">Priority Targets</CardTitle>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleRefresh}
+            disabled={refreshing}
+            className="h-8 w-8 p-0"
+          >
+            <RefreshCw className={`h-4 w-4 ${refreshing ? 'animate-spin' : ''}`} />
+          </Button>
+        </div>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="vip" className="w-full">
