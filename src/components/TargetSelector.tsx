@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -28,7 +27,7 @@ interface AvailableTarget {
   target_rationale: string;
   visit_status: string;
   effective_cadence_days: number;
-  custom_cadence_days: number | null;
+  custom_cadence_days: null | number;
   last_visit_date: string | null;
   next_due_date: string | null;
   cadence_status: string;
@@ -77,7 +76,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         .select('*')
         .not('dispensary_id', 'is', null)
         .order('priority_score', { ascending: false })
-        .limit(100);
+        .limit(500);
 
       if (error) {
         console.error('Error fetching targets:', error);
@@ -100,6 +99,12 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     } finally {
       setLoading(false);
     }
+  };
+
+  const refreshTargets = async () => {
+    setLoading(true);
+    setTargets([]); // Clear existing data
+    await fetchTargets(); // Re-fetch from database
   };
 
   useEffect(() => {
@@ -248,6 +253,14 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
               ))}
             </SelectContent>
           </Select>
+          <Button
+            onClick={refreshTargets}
+            variant="outline"
+            size="sm"
+            className="ml-2"
+          >
+            Refresh Data
+          </Button>
         </div>
       </CardHeader>
       <CardContent>
