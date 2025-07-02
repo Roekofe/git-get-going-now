@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -102,6 +101,16 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     }
   };
 
+  useEffect(() => {
+    if (targets.length > 0) {
+      const tierCounts = targets.reduce((acc, target) => {
+        acc[target.target_tier] = (acc[target.target_tier] || 0) + 1;
+        return acc;
+      }, {} as Record<string, number>);
+      console.log('Target tier distribution:', tierCounts);
+    }
+  }, [targets]);
+
   const handleTargetSelect = async (target: AvailableTarget) => {
     // Fetch the full dispensary record
     const { data, error } = await supabase
@@ -183,10 +192,17 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     return target.region && selectedRegions.includes(target.region);
   });
 
-  const vipTargets = filteredTargets.filter(t => t.target_tier.startsWith('VIP'));
+  const vipTargets = filteredTargets.filter(t => t.target_tier?.startsWith('VIP'));
   const protectionTargets = filteredTargets.filter(t => t.target_tier === 'Revenue_Protection');
   const growthTargets = filteredTargets.filter(t => t.target_tier === 'Growth_Expansion');
-  const maintenanceTargets = filteredTargets.filter(t => t.target_tier === 'Maintenance');
+  const maintenanceTargets = filteredTargets.filter(t =>
+    t.target_tier === 'Maintenance' ||
+    t.target_tier === 'Stable' ||
+    t.target_tier === 'maintenance' ||
+    (!t.target_tier?.startsWith('VIP') &&
+     t.target_tier !== 'Revenue_Protection' &&
+     t.target_tier !== 'Growth_Expansion')
+  );
 
   if (loading) {
     return (
