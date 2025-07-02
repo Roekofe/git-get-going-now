@@ -38,7 +38,10 @@ export type Database = {
       }
       dispensaries: {
         Row: {
+          address: string | null
+          city: string | null
           Confidence_Score: string | null
+          county: string | null
           created_at: string
           Hoodie_ID: string | null
           Hoodie_License: string | null
@@ -46,12 +49,16 @@ export type Database = {
           Is_Verified: string | null
           Match_Type: string | null
           OLCC_Business_Name: string | null
+          region: string | null
           Survey_Display_Name: string | null
           Verification_Notes: string | null
           Verified_License: string | null
         }
         Insert: {
+          address?: string | null
+          city?: string | null
           Confidence_Score?: string | null
+          county?: string | null
           created_at?: string
           Hoodie_ID?: string | null
           Hoodie_License?: string | null
@@ -59,12 +66,16 @@ export type Database = {
           Is_Verified?: string | null
           Match_Type?: string | null
           OLCC_Business_Name?: string | null
+          region?: string | null
           Survey_Display_Name?: string | null
           Verification_Notes?: string | null
           Verified_License?: string | null
         }
         Update: {
+          address?: string | null
+          city?: string | null
           Confidence_Score?: string | null
+          county?: string | null
           created_at?: string
           Hoodie_ID?: string | null
           Hoodie_License?: string | null
@@ -72,6 +83,7 @@ export type Database = {
           Is_Verified?: string | null
           Match_Type?: string | null
           OLCC_Business_Name?: string | null
+          region?: string | null
           Survey_Display_Name?: string | null
           Verification_Notes?: string | null
           Verified_License?: string | null
@@ -420,9 +432,12 @@ export type Database = {
     Views: {
       available_targets: {
         Row: {
+          address: string | null
           banner: string | null
           cadence_status: string | null
+          city: string | null
           converted: boolean | null
+          county: string | null
           custom_cadence_days: number | null
           days_until_due: number | null
           default_cadence_days: number | null
@@ -436,6 +451,7 @@ export type Database = {
           next_due_date: string | null
           percent_change_ytd: number | null
           priority_score: number | null
+          region: string | null
           smokiez_share_percent: number | null
           survey_name: string | null
           target_id: string | null
@@ -451,9 +467,12 @@ export type Database = {
       }
       due_targets: {
         Row: {
+          address: string | null
           banner: string | null
           cadence_status: string | null
+          city: string | null
           converted: boolean | null
+          county: string | null
           custom_cadence_days: number | null
           days_until_due: number | null
           default_cadence_days: number | null
@@ -467,6 +486,7 @@ export type Database = {
           next_due_date: string | null
           percent_change_ytd: number | null
           priority_score: number | null
+          region: string | null
           smokiez_share_percent: number | null
           survey_name: string | null
           target_id: string | null
@@ -516,6 +536,14 @@ export type Database = {
           p_total_sales_ytd: number
         }
         Returns: number
+      }
+      extract_city_from_address: {
+        Args: { address_text: string }
+        Returns: string
+      }
+      get_oregon_region: {
+        Args: { city_name: string }
+        Returns: string
       }
       get_target_tier: {
         Args: {

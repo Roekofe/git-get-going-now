@@ -3,9 +3,10 @@ import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar, RefreshCw, Database } from 'lucide-react';
+import { TrendingUp, TrendingDown, Shield, Target, Clock, Calendar, RefreshCw, Database, MapPin } from 'lucide-react';
 
 interface Dispensary {
   id: string;
@@ -37,6 +38,9 @@ interface AvailableTarget {
   next_due_date: string;
   cadence_status: string;
   days_until_due: number;
+  city: string;
+  region: string;
+  address: string;
 }
 
 interface TargetSelectorProps {
@@ -44,8 +48,20 @@ interface TargetSelectorProps {
   selectedDispensary?: Dispensary | null;
 }
 
+const OREGON_REGIONS = [
+  'All Oregon',
+  'Portland Metro',
+  'Eugene Area', 
+  'Salem Area',
+  'Central Oregon',
+  'Southern Oregon',
+  'Oregon Coast',
+  'Eastern Oregon'
+];
+
 export default function TargetSelector({ onSelect, selectedDispensary }: TargetSelectorProps) {
-  const [targets, setTargets] = useState<AvailableTarget[]>([]);
+  const [allTargets, setAllTargets] = useState<AvailableTarget[]>([]);
+  const [selectedRegion, setSelectedRegion] = useState<string>('All Oregon');
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [addingTestData, setAddingTestData] = useState(false);
@@ -54,6 +70,11 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   useEffect(() => {
     fetchTargets();
   }, []);
+
+  // Filter targets based on selected region
+  const filteredTargets = selectedRegion === 'All Oregon' 
+    ? allTargets 
+    : allTargets.filter(target => target.region === selectedRegion);
 
   const fetchTargets = async (showRefreshToast = false) => {
     try {
@@ -146,7 +167,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         console.log('Share percentages by tier:', shareByTier);
       }
 
-      setTargets(data || []);
+      setAllTargets(data || []);
       
       if (showRefreshToast) {
         toast({
@@ -354,7 +375,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
   };
 
   const getTargetsByTier = (tier: string) => {
-    return targets.filter(target => target.target_tier === tier);
+    return filteredTargets.filter(target => target.target_tier === tier);
   };
 
   const formatCurrency = (amount: number) => {
@@ -421,6 +442,12 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 </Badge>
                 {getCadenceStatusBadge(target.cadence_status, target.days_until_due)}
               </div>
+              
+              {/* Geographic Information */}
+              <div className="flex items-center gap-1 mt-1 text-xs text-muted-foreground">
+                <MapPin className="h-3 w-3" />
+                <span>{target.city || 'Unknown City'}, {target.region || 'Unknown Region'}</span>
+              </div>
             </div>
           </div>
           
@@ -483,7 +510,9 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     <Card>
       <CardHeader className="pb-3">
         <div className="flex justify-between items-center">
-          <CardTitle className="text-lg">Priority Targets</CardTitle>
+          <CardTitle className="text-lg">
+            Priority Targets ({filteredTargets.length} of {allTargets.length} available)
+          </CardTitle>
           <div className="flex gap-2">
             <Button
               variant="ghost"
@@ -514,6 +543,24 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
             </Button>
           </div>
         </div>
+        
+        {/* Region Selector */}
+        <div className="flex items-center gap-2 mt-3">
+          <MapPin className="h-4 w-4 text-muted-foreground" />
+          <span className="text-sm font-medium">Region:</span>
+          <Select value={selectedRegion} onValueChange={setSelectedRegion}>
+            <SelectTrigger className="w-48">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {OREGON_REGIONS.map((region) => (
+                <SelectItem key={region} value={region}>
+                  {region}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="vip" className="w-full">
@@ -540,7 +587,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 ))
               ) : (
                 <p className="text-center text-muted-foreground text-sm py-4">
-                  No VIP targets available
+                  No VIP targets available in {selectedRegion === 'All Oregon' ? 'Oregon' : selectedRegion}
                 </p>
               )}
             </div>
@@ -554,7 +601,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 ))
               ) : (
                 <p className="text-center text-muted-foreground text-sm py-4">
-                  No revenue protection targets available
+                  No revenue protection targets available in {selectedRegion === 'All Oregon' ? 'Oregon' : selectedRegion}
                 </p>
               )}
             </div>
@@ -568,7 +615,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 ))
               ) : (
                 <p className="text-center text-muted-foreground text-sm py-4">
-                  No growth expansion targets available
+                  No growth expansion targets available in {selectedRegion === 'All Oregon' ? 'Oregon' : selectedRegion}
                 </p>
               )}
             </div>
@@ -582,7 +629,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
                 ))
               ) : (
                 <p className="text-center text-muted-foreground text-sm py-4">
-                  No maintenance targets available
+                  No maintenance targets available in {selectedRegion === 'All Oregon' ? 'Oregon' : selectedRegion}
                 </p>
               )}
             </div>
