@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -192,7 +193,9 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
     return target.region && selectedRegions.includes(target.region);
   });
 
-  const vipTargets = filteredTargets.filter(t => t.target_tier?.startsWith('VIP'));
+  // VIP Partners = existing high-value customers with expansion opportunities (VIP_Expansion)
+  // VIP Targets = unconverted high-value prospects (VIP_Conversion) - not currently in database
+  const vipTargets = filteredTargets.filter(t => t.target_tier === 'VIP_Expansion');
   const protectionTargets = filteredTargets.filter(t => t.target_tier === 'Revenue_Protection');
   const growthTargets = filteredTargets.filter(t => t.target_tier === 'Growth_Expansion');
   const maintenanceTargets = filteredTargets.filter(t =>
@@ -251,7 +254,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
         <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="vip" className="text-xs">
-              VIP ({vipTargets.length})
+              VIP Partners ({vipTargets.length})
             </TabsTrigger>
             <TabsTrigger value="protection" className="text-xs">
               Protect ({protectionTargets.length})
@@ -266,7 +269,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
 
           <TabsContent value="vip" className="space-y-3 mt-4">
             {vipTargets.length === 0 ? (
-              <p className="text-sm text-gray-500">No VIP targets available for visits</p>
+              <p className="text-sm text-gray-500">No VIP Partners available for visits</p>
             ) : (
               vipTargets.map((target) => (
                 <Card key={target.target_id} className="border-l-4 border-l-red-500">
