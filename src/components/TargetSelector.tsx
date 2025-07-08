@@ -280,7 +280,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="vip" className="space-y-3 mt-4">
+          <TabsContent value="vip" className="space-y-3 mt-4 max-h-96 overflow-y-auto">
             {vipTargets.length === 0 ? (
               <p className="text-sm text-gray-500">No VIP Partners available for visits</p>
             ) : (
@@ -356,7 +356,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
             )}
           </TabsContent>
 
-          <TabsContent value="protection" className="space-y-3 mt-4">
+          <TabsContent value="protection" className="space-y-3 mt-4 max-h-96 overflow-y-auto">
             {protectionTargets.map((target) => (
               <Card key={target.target_id} className="border-l-4 border-l-yellow-500">
                 <CardContent className="p-4">
@@ -403,7 +403,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
             ))}
           </TabsContent>
 
-          <TabsContent value="growth" className="space-y-3 mt-4">
+          <TabsContent value="growth" className="space-y-3 mt-4 max-h-96 overflow-y-auto">
             {growthTargets.map((target) => (
               <Card key={target.target_id} className="border-l-4 border-l-green-500">
                 <CardContent className="p-4">
@@ -450,7 +450,7 @@ export default function TargetSelector({ onSelect, selectedDispensary }: TargetS
             ))}
           </TabsContent>
 
-          <TabsContent value="maintenance" className="space-y-3 mt-4">
+          <TabsContent value="maintenance" className="space-y-3 mt-4 max-h-96 overflow-y-auto">
             {maintenanceTargets.map((target) => (
               <Card key={target.target_id} className="border-l-4 border-l-gray-500">
                 <CardContent className="p-4">
